@@ -63,14 +63,14 @@
         default_layer {
             display-name = "COLEMAK";
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  | BSPC |
+            // |  TAB |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  |PROFILE|
             // | CTRL |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
             // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
             // | SHFT |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
             //                    | ESC | SPC | TAB |               | ENT | BSPC | DEL |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM  | FUN |
             bindings = <
-                &kp TAB   &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &kp BSPC
+                &kp TAB   &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
                 &kp LCTRL &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O   &kp SQT
                 &kp LSHFT &kp Z         &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
                                                      &hm 4 ESC &hm 1 SPACE &hm 2 TAB                       &hm 2 RET &hm 3 BSPC &hm 5 DEL
@@ -82,14 +82,14 @@
             display-name = "NAV";
             // -----------------------------------------------------------------------------------------
             // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL | BT1 | BT2 | BT3 | BT4 | BT5   |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT | BTCR| RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
+            // | CTRL |     |     |     |     |       |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
+            // | SHFT |     | RGB | RST | BOOT| Unlock|        |       |     |     |     |     |     |      |
             //                    | GUI |     | SPC   |        | ENT   |     | ALT |
             bindings = <
-                &kp TAB   &kp N1       &kp N2          &kp N3       &kp N4       &kp N5       &kp LCTRL &kp RCTRL &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-                &kp LCTRL &bt BT_SEL 0 &bt BT_SEL 1    &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &kp LALT  &kp RALT  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-                &kp LSHFT &bt BT_CLR   &rgb_ug RGB_TOG &sys_reset   &bootloader  &studio_unlock                   &trans   &trans   &trans &trans    &trans &trans
-                                                       &kp LGUI     &trans       &kp SPACE                        &kp LGUI &trans   &kp SPACE
+                &kp TAB   &kp N1 &kp N2          &kp N3     &kp N4      &kp N5         &kp LCTRL &kp RCTRL &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
+                &kp LCTRL &trans &trans          &trans     &trans      &trans         &kp LALT  &kp RALT  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
+                &kp LSHFT &trans &rgb_ug RGB_TOG &sys_reset &bootloader &studio_unlock                     &trans   &trans   &trans &trans    &trans &trans
+                                                 &kp LGUI   &trans      &kp SPACE                          &kp LGUI &trans   &kp SPACE
             >;
         };
 
@@ -134,7 +134,22 @@
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
                 &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
+                                     &trans &trans &trans               &trans &trans &trans
+            >;
+        };
+
+        profile_layer {
+            display-name = "PROFILE";
+            // -----------------------------------------------------------------------------------------
+            // |      |     |     |     |     |     |       |       |     |     |     |     |     | [HOLD] |
+            // |      | BT0 | BT1 | BT2 | BT3 | BT4 |       |       |     |     |     |     |     |        |
+            // |      |BTCLR|     |     |     |     |       |       |     |     |     |     |     |        |
+            //                    |     |     |     |       |       |     |     |
+            bindings = <
+                &trans &trans       &trans       &trans       &trans       &trans       &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4 &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &bt BT_CLR   &trans       &trans       &trans       &trans                     &trans &trans &trans &trans &trans &trans
+                                                 &trans       &trans       &trans                     &trans &trans &trans
             >;
         };
 
