@@ -18,7 +18,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │CS-TB│  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ESC │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │ ESC │ SPC │ TAB │       │ ENT │BSPC │ RPT │
+                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │ RPT │
                   │MEDIA│ NAV │ SYM │       │HYPER│ NUM │ FUN │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
