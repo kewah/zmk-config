@@ -11,12 +11,12 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ### Layer 0: COLEMAK DH
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│ TAB │  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │PROFL│
+│C-TAB│  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │PROFL│
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │CTRL │  A  │  R  │  S  │  T  │  G  │       │  M  │  N  │  E  │  I  │  O  │  '  │
 │     │ GUI │ ALT │ CTL │ SFT │     │       │     │ SFT │ CTL │ ALT │ GUI │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│SHIFT│  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ESC │
+│CS-TB│  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ESC │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ SPC │ TAB │       │ ENT │BSPC │ DEL │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │

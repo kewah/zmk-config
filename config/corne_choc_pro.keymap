@@ -63,16 +63,16 @@
         default_layer {
             display-name = "COLEMAK";
             // --------------------------------------------------------------------------------
-            // |  TAB |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  |PROFILE|
+            // |C-TAB |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  |PROFILE|
             // | CTRL |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
             // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
-            // | SHFT |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            // |CS-TAB|  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
             //                    | ESC | SPC | TAB |               | ENT | BSPC | DEL |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM  | FUN |
             bindings = <
-                &kp TAB   &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
-                &kp LCTRL &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
-                &kp LSHFT &kp Z         &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
+                &kp LC(TAB)   &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
+                &kp LCTRL     &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
+                &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
                                                      &hm 4 ESC &hm 1 SPACE &hm 2 TAB                       &hm 2 RET &hm 3 BSPC &hm 5 DEL
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
