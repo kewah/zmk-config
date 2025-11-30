@@ -32,7 +32,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │CTRL │     │     │     │     │     │       │  ←  │  ↓  │  ↑  │  →  │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│SHIFT│     │ RGB │ RST │BOOT │UNLCK│       │     │     │     │     │     │     │
+│SHIFT│     │     │     │     │     │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ GUI │ ### │ SPC │       │ GUI │     │ SPC │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
@@ -54,7 +54,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ### Layer 6: PROFILE
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │     │     │     │     │     │       │     │     │     │     │     │[HLD]│
+│ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │       │     │     │     │     │     │[HLD]│
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │       │     │     │     │     │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
@@ -63,7 +63,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   │     │     │     │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold top-right key to access. BT0-4 select Bluetooth profile, BTCLR clears current profile pairing.
+Hold top-right key to access. BT0-4 select Bluetooth profile, BTCLR clears current profile pairing. RGB controls: TOG (toggle), HUI/HUD (hue), BRI/BRD (brightness), EFF (effect).
 
 ## Flash
 
