@@ -41,3 +41,7 @@ Keymaps use ZMK devicetree syntax:
 ## Custom Shield
 
 `boards/shields/nice_view_disp/` contains custom display widget for Sofle. Can rotate 180° via `CONFIG_NICE_VIEW_DISP_ROTATE_180=y` in `.conf`.
+
+## Required Actions
+
+**When modifying keymap layouts:** Always update `README.md` to reflect layout changes. Keep layout documentation in sync with `.keymap` files.
