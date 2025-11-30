@@ -66,7 +66,21 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   │     │  0  │  =  │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold BSPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input.
+Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input.
+
+### Layer 5: FUN
+```
+┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
+│     │ F12 │ F9  │ F8  │ F7  │     │       │     │     │     │     │     │     │
+├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
+│     │ F10 │ F3  │ F2  │ F1  │     │       │     │     │     │     │     │     │
+├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
+│     │ F11 │ F6  │ F5  │ F4  │     │       │     │     │     │     │     │     │
+└─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
+                  │     │     │     │       │     │     │     │
+                  └─────┴─────┴─────┘       └─────┴─────┴─────┘
+```
+Hold RPT (repeat key) to access. F-keys mirror NUM layer positions.
 
 ### Layer 6: PROFILE
 ```

@@ -179,11 +179,16 @@
 
         fun_layer {
             display-name = "FUN";
+            // -----------------------------------------------------------------------------------------
+            // |      | F12 |  F9 |  F8 |  F7 |     |       |       |     |     |     |     |     |      |
+            // |      | F10 |  F3 |  F2 |  F1 |     |       |       |     |     |     |     |     |      |
+            // |      | F11 |  F6 |  F5 |  F4 |     |               |     |     |     |     |     |      |
+            //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans
+                &trans &kp F12 &kp F9 &kp F8 &kp F7 &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp F10 &kp F3 &kp F2 &kp F1 &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &kp F11 &kp F6 &kp F5 &kp F4 &trans               &trans &trans &trans &trans &trans &trans
+                                      &trans &trans &trans               &trans &trans &trans
             >;
         };
 
