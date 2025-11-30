@@ -89,6 +89,14 @@
             hold-trigger-key-positions = <0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33 40 41 42>;
             hold-trigger-on-release;
         };
+
+        fun_repeat: fun_layer_repeat {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <0>;
+            tapping-term-ms = <200>;
+            flavor = "tap-preferred";
+            bindings = <&mo 5>, <&key_repeat>;
+        };
     };
 };
 
@@ -103,13 +111,13 @@
             // |C-TAB |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
             // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
             // |CS-TAB|  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
-            //                    | ESC | SPC | TAB |               | ENT | BSPC | DEL |
+            //                    | ESC | SPC | TAB |               | ENT | BSPC | RPT |
             //                    |MEDIA| NAV | SYM |               |HYPER| NUM  | FUN |
             bindings = <
                 &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
                 &kp LC(TAB)   &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
                 &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
-                                                     &hm 4 ESC &hm 1 SPACE &hm 2 TAB                        &hyp 0 RET &hm 3 BSPC &hm 5 DEL
+                                                     &hm 4 ESC &hm 1 SPACE &hm 2 TAB                        &hyp 0 RET &hm 3 BSPC &fun_repeat
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
