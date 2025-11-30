@@ -14,6 +14,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │ TAB │  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │BSPC │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │CTRL │  A  │  R  │  S  │  T  │  G  │       │  M  │  N  │  E  │  I  │  O  │  '  │
+│     │ GUI │ ALT │ CTL │ SFT │     │       │     │ SFT │ CTL │ ALT │ GUI │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │SHIFT│  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ESC │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
@@ -21,6 +22,8 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
+
+**Home Row Mods:** Hold A/R/S/T for GUI/ALT/CTRL/SHIFT (left), N/E/I/O for SHIFT/CTRL/ALT/GUI (right). Bilateral combinations prevent misfires.
 
 ### Layer 1: NAV
 ```
