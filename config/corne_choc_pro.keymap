@@ -81,15 +81,15 @@
         nav_layer {
             display-name = "NAV";
             // -----------------------------------------------------------------------------------------
-            // |  TAB |  1  |  2  |  3  |  4  |  5    |  LCTRL | RCTRL |  6  |  7  |  8  |  9  |  0  | BSPC |
-            // | CTRL |     |     |     |     |       |  LALT  | RALT  | LFT | DWN |  UP | RGT |     |      |
-            // | SHFT |     |     |     |     |       |        |       |     |     |     |     |     |      |
-            //                    | GUI |     | SPC   |        | ENT   |     | ALT |
+            // |      |     |PWIN |NWIN |     |     |       |       |UNDO |PASTE|COPY | CUT |REDO |      |
+            // |      | GUI | ALT | CTL | SFT |     |       |       | LFT | DWN |  UP | RGT |     |      |
+            // |      |     |     | RLD | BCK | FWD |       |       |HOME |PGDN |PGUP | END |     |      |
+            //                    | GUI | ### | SPC |       | GUI   |     | SPC |
             bindings = <
-                &kp TAB   &kp N1 &kp N2          &kp N3     &kp N4      &kp N5         &kp LCTRL &kp RCTRL &kp N6   &kp N7   &kp N8 &kp N9    &kp N0 &kp BSPC
-                &kp LCTRL &trans &trans          &trans     &trans      &trans         &kp LALT  &kp RALT  &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans &trans
-                &kp LSHFT &trans &trans          &trans     &trans      &trans                             &trans   &trans   &trans &trans    &trans &trans
-                                                 &kp LGUI   &trans      &kp SPACE                          &kp LGUI &trans   &kp SPACE
+                &trans &trans &kp LG(LS(TAB)) &kp LG(TAB) &trans &trans &trans &trans &kp LG(Z) &kp LG(V) &kp LG(C) &kp LG(X) &kp LG(LS(Z)) &trans
+                &trans &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT &trans &trans &trans &kp LEFT  &kp DOWN     &kp UP        &kp RIGHT &trans &trans
+                &trans &trans    &trans   &kp LG(R) &kp LG(LBKT) &kp LG(RBKT)      &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &trans
+                                          &kp LGUI  &trans    &kp SPACE            &kp LGUI &trans   &kp SPACE
             >;
         };
 
