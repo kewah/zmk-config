@@ -4,7 +4,7 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 ## Project Overview
 
-ZMK firmware configuration for split keyboards (Corne, Sofle, Piantor) with nice!view displays. This is a user config repo that references the main ZMK firmware.
+ZMK firmware configuration for Corne split keyboard with nice!view display. This is a user config repo that references the main ZMK firmware.
 
 ## Build System
 
@@ -32,15 +32,9 @@ Keymaps use ZMK devicetree syntax:
 - `&bt BT_SEL N` - Bluetooth profile select
 - Layers indexed 0-8; layer 0 is default
 
-## Configured Boards
+## Configured Board
 
 - `corne_choc_pro` - 42-key split + encoders + nice_view display
-- `sofle_choc_pro` - 58-key split + encoders + nice_view_disp (custom widget)
-- `piantor_pro_bt` - 42-key split + nice_view display
-
-## Custom Shield
-
-`boards/shields/nice_view_disp/` contains custom display widget for Sofle. Can rotate 180° via `CONFIG_NICE_VIEW_DISP_ROTATE_180=y` in `.conf`.
 
 ## Required Actions
 

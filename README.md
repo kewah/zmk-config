@@ -1,6 +1,6 @@
 # ZMK Config
 
-Personal ZMK firmware configuration for Corne, Sofle, and Piantor split keyboards.
+Personal ZMK firmware configuration for Corne split keyboard.
 
 ## Build
 
