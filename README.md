@@ -23,7 +23,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
-**Home Row Mods:** Hold A/R/S/T for GUI/ALT/CTRL/SHIFT (left), N/E/I/O for SHIFT/CTRL/ALT/GUI (right). Bilateral combinations prevent misfires.
+**Home Row Mods:** Hold A/R/S/T or N/E/I/O for GUI/ALT/CTRL/SHIFT. All mods use left keycodes. Bilateral combinations prevent misfires.
 
 ### Layer 1: NAV
 ```

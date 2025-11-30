@@ -71,7 +71,7 @@
             //                    |MEDIA| NAV | SYM |               | SYM | NUM  | FUN |
             bindings = <
                 &kp TAB   &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
-                &kp LCTRL &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr RSHFT N  &hmr RCTRL E  &hmr RALT I  &hmr RGUI O   &kp SQT
+                &kp LCTRL &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
                 &kp LSHFT &kp Z         &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
                                                      &hm 4 ESC &hm 1 SPACE &hm 2 TAB                       &hm 2 RET &hm 3 BSPC &hm 5 DEL
             >;
