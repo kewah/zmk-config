@@ -153,6 +153,21 @@
             flavor = "tap-preferred";
             bindings = <&mo>, <&key_repeat_param>;
         };
+
+        // App switcher swapper - holds Cmd while cycling, releases on layer exit
+        swapper_next: swapper_next {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp TAB>, <&kt LGUI>;
+            ignored-key-positions = <3>;  // PWIN position - allow shift+tab while held
+        };
+
+        swapper_prev: swapper_prev {
+            compatible = "zmk,behavior-tri-state";
+            #binding-cells = <0>;
+            bindings = <&kt LGUI>, <&kp LS(TAB)>, <&kt LGUI>;
+            ignored-key-positions = <4>;  // NWIN position
+        };
     };
 };
 
@@ -187,7 +202,7 @@
             // |      |     |     | RLD | BCK | FWD |       |       |HOME |PGDN |PGUP | END |     |      |
             //                    |     |     |     |       |     |     |     |
             bindings = <
-                &trans &trans &trans &kp LG(LS(TAB)) &kp LG(TAB) &trans &trans &trans &kp LG(Z) &kp LG(V) &kp LG(C) &kp LG(X) &kp LG(LS(Z)) &trans
+                &trans &trans &trans &swapper_prev &swapper_next &trans &trans &trans &kp LG(Z) &kp LG(V) &kp LG(C) &kp LG(X) &kp LG(LS(Z)) &trans
                 &trans &kp LCTRL &kp LALT &kp LGUI  &kp LSHFT &trans &trans &trans &kp LEFT  &kp DOWN     &kp UP        &kp RIGHT &trans &trans
                 &trans &trans    &trans   &kp LG(R) &kp LG(LBKT) &kp LG(RBKT)      &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &trans
                                           &trans    &trans    &trans               &trans   &trans   &trans
