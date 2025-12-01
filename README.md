@@ -59,14 +59,14 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │  /  │  9  │  8  │  7  │  *  │       │     │     │     │     │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  -  │  3  │  2  │  1  │  +  │       │     │     │     │     │     │     │
+│     │  -  │  3  │  2  │  1  │  +  │       │     │ SFT │ CTL │ ALT │ GUI │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  X  │  6  │  5  │  4  │  %  │       │     │     │  ,  │  .  │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │     │  0  │  =  │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input.
+Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
 
 ### Layer 5: FUN
 ```
