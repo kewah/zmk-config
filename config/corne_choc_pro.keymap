@@ -96,6 +96,32 @@
             hold-trigger-on-release;
         };
 
+        // Hyper mod - left hand (D key)
+        hypl: hyper_home_row_left {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&hyper_mod>, <&kp>;
+            hold-trigger-key-positions = <8 9 10 11 12 13 22 23 24 25 26 27 34 35 36 37 38 39 43 44 45>;
+            hold-trigger-on-release;
+        };
+
+        // Hyper mod - right hand (H key)
+        hypr: hyper_home_row_right {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <280>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
+            flavor = "balanced";
+            bindings = <&hyper_mod>, <&kp>;
+            hold-trigger-key-positions = <0 1 2 3 4 5 14 15 16 17 18 19 28 29 30 31 32 33 40 41 42>;
+            hold-trigger-on-release;
+        };
+
         fun_repeat: fun_layer_repeat {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -117,13 +143,14 @@
             // |C-TAB |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
             // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
             // |CS-TAB|  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
             //                    | ESC | ENT | TAB |               | BSPC| SPC | RPT |
-            //                    |MEDIA| NAV | SYM |               |HYPER| NUM | FUN |
+            //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
                 &kp LC(TAB)   &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
-                &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &kp D         &kp V                     &kp K &kp H         &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
-                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hyp 0 BSPC &hm 3 SPACE &fun_repeat 5 0
+                &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
+                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &fun_repeat 5 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
