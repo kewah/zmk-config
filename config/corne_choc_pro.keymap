@@ -172,7 +172,7 @@
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 7
-                &none         &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
+                &none         &hml LCTRL A  &hml LALT R  &hml LGUI S   &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LGUI E   &hmr LALT I  &hmr LCTRL O  &kp SQT
                 &kp LG(LBKT)    &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp LG(RBKT)
                                                      &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_repeat 6 0
             >;
@@ -188,7 +188,7 @@
             //                    |     |     |     |       |     |     |     |
             bindings = <
                 &trans &trans &trans &kp LG(LS(TAB)) &kp LG(TAB) &trans &trans &trans &kp LG(Z) &kp LG(V) &kp LG(C) &kp LG(X) &kp LG(LS(Z)) &trans
-                &trans &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT &trans &trans &trans &kp LEFT  &kp DOWN     &kp UP        &kp RIGHT &trans &trans
+                &trans &kp LCTRL &kp LALT &kp LGUI  &kp LSHFT &trans &trans &trans &kp LEFT  &kp DOWN     &kp UP        &kp RIGHT &trans &trans
                 &trans &trans    &trans   &kp LG(R) &kp LG(LBKT) &kp LG(RBKT)      &kp HOME &kp PG_DN &kp PG_UP &kp END &trans &trans
                                           &trans    &trans    &trans               &trans   &trans   &trans
             >;
@@ -203,7 +203,7 @@
             //                    |     |     |     |               |     |     |     |
             bindings = <
                 &trans &trans    &trans   &trans    &trans    &trans    &trans &trans &kp CARET &kp AMPS   &kp PIPE   &kp AT    &fat_arrow &trans
-                &trans &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT &trans    &trans &trans &kp HASH  &kp QMARK  &kp COLON  &kp EQUAL &kp EXCL   &kp SEMI
+                &trans &kp LCTRL &kp LALT &kp LGUI  &kp LSHFT &trans    &trans &trans &kp HASH  &kp QMARK  &kp COLON  &kp EQUAL &kp EXCL   &kp SEMI
                 &trans &trans    &trans   &trans    &trans    &trans                  &kp DLLR  &null_coal &opt_chain &log_and  &log_or    &kp COMMA
                                           &trans    &trans    &trans                  &trans    &trans     &trans
             >;
@@ -218,7 +218,7 @@
             //                    |     |     |     |               |     |     |     |
             bindings = <
                 &trans &kp GRAVE &kp ASTRK &kp PLUS  &kp MINUS &kp TILDE &trans &trans &trans &trans    &trans    &trans   &trans    &trans
-                &trans &kp LPAR  &kp LBRC  &kp LBKT  &kp FSLH  &kp UNDER &trans &trans &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI  &trans
+                &trans &kp LPAR  &kp LBRC  &kp LBKT  &kp FSLH  &kp UNDER &trans &trans &trans &kp LSHFT &kp LGUI  &kp LALT &kp LCTRL &trans
                 &trans &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH  &kp PRCNT               &trans &trans    &trans    &trans   &trans    &trans
                                            &trans    &trans    &trans                  &trans &trans    &trans
             >;
@@ -233,7 +233,7 @@
             //                    |     |  0  |  =  |               |     |     |     |
             bindings = <
                 &trans &kp SLASH &kp N9 &kp N8 &kp N7 &kp STAR  &trans &trans &trans &trans       &trans        &trans       &trans      &trans
-                &trans &kp MINUS &kp N3 &kp N2 &kp N1 &kp PLUS  &trans &trans &trans &kp LSHFT    &kp LCTRL     &kp LALT     &kp LGUI    &trans
+                &trans &kp MINUS &kp N3 &kp N2 &kp N1 &kp PLUS  &trans &trans &trans &kp LSHFT    &kp LGUI      &kp LALT     &kp LCTRL   &trans
                 &trans &kp X     &kp N6 &kp N5 &kp N4 &kp PRCNT               &trans &trans       &trans        &trans       &trans      &trans
                                         &trans &kp N0 &kp EQUAL               &trans &trans       &trans
             >;
