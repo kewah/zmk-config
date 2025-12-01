@@ -171,10 +171,10 @@
             //                    | ESC | ENT | TAB |               | BSPC| SPC | RPT |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
-                &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 6
+                &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 7
                 &kp LC(TAB)   &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
                 &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
-                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &fun_repeat 5 0
+                                                     &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_repeat 6 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
@@ -194,18 +194,33 @@
             >;
         };
 
-        sym_layer {
-            display-name = "SYM";
+        sym_left_layer {
+            display-name = "SYM-L";
             // -----------------------------------------------------------------------------------------
-            // |      |  `  |  *  |  +  |  -  |  ~  |       |       |  ^  |  &  |  |  |  @  | =>  |      |
-            // |      |  (  |  {  |  [  |  /  |  _  |       |       |  #  |  ?  |  :  |  =  |  !  |  ;   |
-            // |      |  )  |  }  |  ]  |  \  |  %  |               |  $  | ??  | ?.  | &&  | ||  |  ,   |
+            // |      |     |     |     |     |     |       |       |  ^  |  &  |  |  |  @  | =>  |      |
+            // |      | GUI | ALT | CTL | SFT |     |       |       |  #  |  ?  |  :  |  =  |  !  |  ;   |
+            // |      |     |     |     |     |     |               |  $  | ??  | ?.  | &&  | ||  |  ,   |
             //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &kp GRAVE &kp ASTRK &kp PLUS &kp MINUS &kp TILDE &trans &trans &kp CARET &kp AMPS  &kp PIPE  &kp AT   &fat_arrow &trans
-                &trans &kp LPAR  &kp LBRC  &kp LBKT &kp FSLH  &kp UNDER &trans &trans &kp HASH  &kp QMARK &kp COLON &kp EQUAL &kp EXCL  &kp SEMI
-                &trans &kp RPAR  &kp RBRC  &kp RBKT &kp BSLH  &kp PRCNT               &kp DLLR  &null_coal &opt_chain &log_and &log_or  &kp COMMA
-                                           &trans   &trans    &trans                  &trans    &trans    &trans
+                &trans &trans    &trans   &trans    &trans    &trans    &trans &trans &kp CARET &kp AMPS   &kp PIPE   &kp AT    &fat_arrow &trans
+                &trans &kp LGUI  &kp LALT &kp LCTRL &kp LSHFT &trans    &trans &trans &kp HASH  &kp QMARK  &kp COLON  &kp EQUAL &kp EXCL   &kp SEMI
+                &trans &trans    &trans   &trans    &trans    &trans                  &kp DLLR  &null_coal &opt_chain &log_and  &log_or    &kp COMMA
+                                          &trans    &trans    &trans                  &trans    &trans     &trans
+            >;
+        };
+
+        sym_right_layer {
+            display-name = "SYM-R";
+            // -----------------------------------------------------------------------------------------
+            // |      |  `  |  *  |  +  |  -  |  ~  |       |       |     |     |     |     |     |      |
+            // |      |  (  |  {  |  [  |  /  |  _  |       |       |     | SFT | CTL | ALT | GUI |      |
+            // |      |  )  |  }  |  ]  |  \  |  %  |               |     |     |     |     |     |      |
+            //                    |     |     |     |               |     |     |     |
+            bindings = <
+                &trans &kp GRAVE &kp ASTRK &kp PLUS  &kp MINUS &kp TILDE &trans &trans &trans &trans    &trans    &trans   &trans    &trans
+                &trans &kp LPAR  &kp LBRC  &kp LBKT  &kp FSLH  &kp UNDER &trans &trans &trans &kp LSHFT &kp LCTRL &kp LALT &kp LGUI  &trans
+                &trans &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH  &kp PRCNT               &trans &trans    &trans    &trans   &trans    &trans
+                                           &trans    &trans    &trans                  &trans &trans    &trans
             >;
         };
 

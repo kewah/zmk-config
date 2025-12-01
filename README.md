@@ -40,21 +40,37 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
-### Layer 2: SYM
+### Layer 2: SYM-L (left thumb TAB)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │  `  │  *  │  +  │  -  │  ~  │       │  ^  │  &  │  |  │  @  │ =>  │     │
+│     │     │     │     │     │     │       │  ^  │  &  │  |  │  @  │ =>  │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  (  │  {  │  [  │  /  │  _  │       │  #  │  ?  │  :  │  =  │  !  │  ;  │
+│     │ GUI │ ALT │ CTL │ SFT │     │       │  #  │  ?  │  :  │  =  │  !  │  ;  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  )  │  }  │  ]  │  \  │  %  │       │  $  │ ??  │ ?.  │ &&  │ ||  │  ,  │
+│     │     │     │     │     │     │       │  $  │ ??  │ ?.  │ &&  │ ||  │  ,  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │     │     │     │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
+Left thumb activates right-side symbols with left-side home row mods.
+
+### Layer 3: SYM-R (right thumb BSPC)
+```
+┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
+│     │  `  │  *  │  +  │  -  │  ~  │       │     │     │     │     │     │     │
+├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
+│     │  (  │  {  │  [  │  /  │  _  │       │     │ SFT │ CTL │ ALT │ GUI │     │
+├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
+│     │  )  │  }  │  ]  │  \  │  %  │       │     │     │     │     │     │     │
+└─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
+                  │     │     │     │       │     │     │     │
+                  └─────┴─────┴─────┘       └─────┴─────┴─────┘
+```
+Right thumb activates left-side symbols with right-side home row mods.
+
 **Macros:** `=>` fat arrow, `??` null coalescing, `?.` optional chaining, `&&` logical and, `||` logical or.
 
-### Layer 3: NUM
+### Layer 4: NUM
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │  /  │  9  │  8  │  7  │  *  │       │     │     │     │     │     │     │
@@ -68,7 +84,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ```
 Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
 
-### Layer 5: FUN
+### Layer 6: FUN
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │ F12 │ F9  │ F8  │ F7  │     │       │     │     │     │     │     │     │
@@ -82,7 +98,7 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ```
 Hold RPT (repeat key) to access. F-keys mirror NUM layer positions.
 
-### Layer 6: PROFILE
+### Layer 7: PROFILE
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │       │     │     │     │     │     │[HLD]│
