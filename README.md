@@ -36,7 +36,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │     │ RLD │ BCK │ FWD │       │HOME │PGDN │PGUP │ END │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │     │     │     │
+                  │     │ ### │     │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
@@ -49,7 +49,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │     │     │     │     │       │  $  │ ??  │ ?.  │ &&  │ ||  │  ,  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │     │     │     │
+                  │     │     │ ### │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 Left thumb activates right-side symbols with left-side home row mods.
@@ -63,7 +63,7 @@ Left thumb activates right-side symbols with left-side home row mods.
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  )  │  }  │  ]  │  \  │  %  │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │     │     │     │
+                  │     │     │     │       │ ### │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 Right thumb activates left-side symbols with right-side home row mods.
@@ -79,7 +79,7 @@ Right thumb activates left-side symbols with right-side home row mods.
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  X  │  6  │  5  │  4  │  %  │       │     │     │  ,  │  .  │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │  0  │  =  │       │     │     │     │
+                  │     │  0  │  =  │       │     │ ### │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
@@ -93,7 +93,7 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │ F11 │ F6  │ F5  │ F4  │     │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │     │     │     │
+                  │     │     │     │       │     │     │ ### │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 Hold RPT (repeat key) to access. F-keys mirror NUM layer positions.
