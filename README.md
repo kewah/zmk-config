@@ -18,7 +18,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │ ⌘[  │  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ⌘]  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │ RPT │
+                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │ MAG │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
@@ -39,6 +39,8 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   │     │ ### │     │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
+
+**NAV Combos:** N+E = previous word (⌥←), E+I = next word (⌥→)
 
 ### Layer 2: SYM-L (left thumb TAB)
 ```
@@ -96,7 +98,62 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
                   │     │     │     │       │     │     │ ### │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold RPT (repeat key) to access. F-keys mirror NUM layer positions.
+Hold Magic key to access. F-keys mirror NUM layer positions.
+
+## Magic Key
+
+The right thumb key (tap) is a context-aware "magic" key using [zmk-adaptive-key](https://github.com/urob/zmk-adaptive-key). It outputs different results based on the last key pressed. Fallback is normal repeat.
+
+### Navigation Reversals
+| After | Magic outputs |
+|-------|---------------|
+| ← | → |
+| → | ← |
+| ↑ | ↓ |
+| ↓ | ↑ |
+| Home | End |
+| End | Home |
+| PgUp | PgDn |
+| PgDn | PgUp |
+| Bspc | Del |
+| Del | Bspc |
+
+### Bracket Pairs
+| After | Magic outputs |
+|-------|---------------|
+| `[` | `]` |
+| `]` | `[` |
+| `{` | `}` |
+| `}` | `{` |
+| `(` | `)` |
+| `)` | `(` |
+
+### Text Completions (Magic Sturdy inspired)
+| After | Magic outputs | Example |
+|-------|---------------|---------|
+| A | ND | a**nd** |
+| B | ECAUSE | b**ecause** |
+| C | Y | c**y**cle |
+| D | Y | d**y**namic |
+| E | U | e**u**ro |
+| G | Y | g**y**m |
+| I | NG | i**ng** |
+| J | UST | j**ust** |
+| K | S | k**s** |
+| M | ENT | m**ent**al |
+| N | ION | n**ion** (union) |
+| O | A | o**a**k |
+| P | Y | p**y**thon |
+| T | MENT | t**ment** (treatment) |
+| U | E | u**e** (true) |
+| V | ER | v**er**y |
+| W | OULD | w**ould** |
+| X | ES | x**es** (boxes) |
+| Y | OU | y**ou** |
+| `,` | ` AND` | **, and** |
+| `=` | `>` | `=>` |
+
+**Note:** Magic completions replace normal repeat for mapped keys. Unmapped keys (F, H, L, Q, R, S, Z, numbers, etc.) still repeat normally.
 
 ### Layer 7: PROFILE
 ```
