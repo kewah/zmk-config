@@ -165,15 +165,15 @@
             display-name = "COLEMAK";
             // --------------------------------------------------------------------------------
             // |  `   |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  |PROFILE|
-            // |C-TAB |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
+            // |G-SPC |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
             // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
-            // |CS-TAB|  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  | ESC  |
+            // | ⌘[  |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  |  ⌘]  |
             // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
             //                    | ESC | ENT | TAB |               | BSPC| SPC | RPT |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 7
-                &none         &hml LCTRL A  &hml LALT R  &hml LGUI S   &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LGUI E   &hmr LALT I  &hmr LCTRL O  &kp SQT
+                &kp LG(SPACE) &hml LCTRL A  &hml LALT R  &hml LGUI S   &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LGUI E   &hmr LALT I  &hmr LCTRL O  &kp SQT
                 &kp LG(LBKT)    &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp LG(RBKT)
                                                      &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_repeat 6 0
             >;
