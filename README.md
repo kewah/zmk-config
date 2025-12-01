@@ -11,7 +11,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 ### Layer 0: COLEMAK DH
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│  `  │  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │PROFL│
+│  `  │  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │ DEL │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │⌘SPC │  A  │  R  │  S  │  T  │  G  │       │  M  │  N  │  E  │  I  │  O  │  '  │
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │     │
@@ -89,16 +89,16 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ### Layer 6: FUN
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │ F12 │ F9  │ F8  │ F7  │     │       │     │     │     │     │     │     │
+│     │ F12 │ F9  │ F8  │ F7  │     │       │ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ F10 │ F3  │ F2  │ F1  │     │       │     │     │     │     │     │     │
+│     │ F10 │ F3  │ F2  │ F1  │     │       │     │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ F11 │ F6  │ F5  │ F4  │     │       │     │     │     │     │     │     │
+│     │ F11 │ F6  │ F5  │ F4  │     │       │     │BTCLR│     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │     │     │     │       │     │     │ ### │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold Magic key to access. F-keys mirror NUM layer positions.
+Hold Magic key to access. F-keys mirror NUM layer positions. Right side: RGB controls (TOG/HUI/HUD/BRI/BRD/EFF) and Bluetooth profile selection (BT0-4, BTCLR).
 
 ## Magic Key
 
@@ -154,20 +154,6 @@ The right thumb key (tap) is a context-aware "magic" key using [zmk-adaptive-key
 | `=` | `>` | `=>` |
 
 **Note:** Magic completions replace normal repeat for mapped keys. Unmapped keys (F, H, L, Q, R, S, Z, numbers, etc.) still repeat normally.
-
-### Layer 7: PROFILE
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │       │     │     │     │     │     │[HLD]│
-├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ BT0 │ BT1 │ BT2 │ BT3 │ BT4 │       │     │     │     │     │     │     │
-├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │BTCLR│     │     │     │     │       │     │     │     │     │     │     │
-└─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │     │     │     │
-                  └─────┴─────┴─────┘       └─────┴─────┴─────┘
-```
-Hold top-right key to access. BT0-4 select Bluetooth profile, BTCLR clears current profile pairing. RGB controls: TOG (toggle), HUI/HUD (hue), BRI/BRD (brightness), EFF (effect).
 
 ## Flash
 
