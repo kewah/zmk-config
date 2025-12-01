@@ -41,6 +41,30 @@
             bindings = <&kp MINUS &kp GT>;
         };
 
+        null_coal: null_coalescing {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK &kp QMARK>;
+        };
+
+        opt_chain: optional_chaining {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp QMARK &kp DOT>;
+        };
+
+        log_and: logical_and {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp AMPS &kp AMPS>;
+        };
+
+        log_or: logical_or {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp PIPE &kp PIPE>;
+        };
+
         key_repeat_param: key_repeat_param {
             compatible = "zmk,behavior-macro-one-param";
             #binding-cells = <1>;
@@ -173,14 +197,14 @@
         sym_layer {
             display-name = "SYM";
             // -----------------------------------------------------------------------------------------
-            // |      |  `  |  <  |  >  |  -  |  |  |       |       |  ^  |  {  |  }  |  $  | =>  |      |
-            // |      |  !  |  *  |  /  |  =  |  &  |       |       |  #  |  (  |  )  |  ;  |  "  |  ->  |
-            // |      |  ~  |  +  |  [  |  ]  |  %  |               |  @  |  :  |  ,  |  .  |  '  |      |
+            // |      |  `  |  *  |  +  |  -  |  ~  |       |       |  ^  |  &  |  |  |  @  | =>  |      |
+            // |      |  (  |  {  |  [  |  /  |  _  |       |       |  #  |  ?  |  :  |  =  |  !  |  ;   |
+            // |      |  )  |  }  |  ]  |  \  |  %  |               |  $  | ??  | ?.  | &&  | ||  |  ,   |
             //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &kp GRAVE &kp LT    &kp GT   &kp MINUS &kp PIPE  &trans &trans &kp CARET &kp LBRC  &kp RBRC  &kp DLLR &fat_arrow  &trans
-                &trans &kp EXCL  &kp ASTRK &kp FSLH &kp EQUAL &kp AMPS  &trans &trans &kp HASH  &kp LPAR  &kp RPAR  &kp SEMI &kp DQT     &thin_arrow
-                &trans &kp TILDE &kp PLUS  &kp LBKT &kp RBKT  &kp PRCNT               &kp AT    &kp COLON &kp COMMA &kp DOT  &kp SQT     &trans
+                &trans &kp GRAVE &kp ASTRK &kp PLUS &kp MINUS &kp TILDE &trans &trans &kp CARET &kp AMPS  &kp PIPE  &kp AT   &fat_arrow &trans
+                &trans &kp LPAR  &kp LBRC  &kp LBKT &kp FSLH  &kp UNDER &trans &trans &kp HASH  &kp QMARK &kp COLON &kp EQUAL &kp EXCL  &kp SEMI
+                &trans &kp RPAR  &kp RBRC  &kp RBKT &kp BSLH  &kp PRCNT               &kp DLLR  &null_coal &opt_chain &log_and &log_or  &kp COMMA
                                            &trans   &trans    &trans                  &trans    &trans    &trans
             >;
         };
