@@ -172,8 +172,8 @@
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &mo 7
-                &kp LC(TAB)   &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
-                &kp LS(LC(TAB)) &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp ESC
+                &none         &hml LGUI A   &hml LALT R  &hml LCTRL S  &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LCTRL E  &hmr LALT I  &hmr LGUI O   &kp SQT
+                &kp LG(LBKT)    &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp LG(RBKT)
                                                      &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_repeat 6 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
