@@ -386,11 +386,16 @@
 
         media_layer {
             display-name = "MEDIA";
+            // -----------------------------------------------------------------------------------------
+            // |      |     |     |     |     |     |       |       |     |     |     |     |     |      |
+            // |      |     |     |     |     |     |       |       |     |VOL- |VOL+ |PREV |NEXT |      |
+            // |      |     |     |     |     |     |               |     |     |     |     |     |      |
+            //                    | ### |     |     |               |MUTE |PLAY |     |
             bindings = <
                 &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
-                &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans &trans
+                &trans &trans &trans &trans &trans &trans &trans &trans &trans &kp C_VOL_DN &kp C_VOL_UP &kp C_PREV &kp C_NEXT &trans
                 &trans &trans &trans &trans &trans &trans               &trans &trans &trans &trans &trans &trans
-                                     &trans &trans &trans               &trans &trans &trans       
+                                     &trans &trans &trans               &kp C_MUTE &kp C_PP &trans
             >;
         };
 
