@@ -8,24 +8,25 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 ## Corne Layout
 
-### Layer 0: COLEMAK DH
+### Layer 0: BASE (Sturdy)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│  `  │  Q  │  W  │  F  │  P  │  B  │       │  J  │  L  │  U  │  Y  │  ;  │ DEL │
+│  `  │  V  │  M  │  L  │  C  │  P  │       │  X  │  F  │  O  │  U  │  J  │ DEL │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│⌘SPC │  A  │  R  │  S  │  T  │  G  │       │  M  │  N  │  E  │  I  │  O  │  '  │
+│⌘SPC │  S  │  T  │  R  │  D  │  Y  │       │  .  │  N  │  A  │  E  │  I  │  -  │
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│ ⌘[  │  Z  │  X  │  C  │  D  │  V  │       │  K  │  H  │  ,  │  .  │  /  │ ⌘]  │
+│     │  Z  │  K  │  Q  │  G  │  W  │       │  B  │  H  │  '  │  ;  │  ,  │  /  │
+│     │     │     │     │     │ HYP │       │     │ HYP │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ ENT │ TAB │       │BSPC │ SPC │ MAG │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
-**Home Row Mods:** Hold A/R/S/T or N/E/I/O for CTRL/ALT/GUI/SHIFT (left) or SHIFT/GUI/ALT/CTRL (right). All mods use left keycodes. Bilateral combinations prevent misfires.
+**Home Row Mods:** Hold S/T/R/D or N/A/E/I for CTRL/ALT/GUI/SHIFT (left) or SHIFT/GUI/ALT/CTRL (right). All mods use left keycodes. Bilateral combinations prevent misfires.
 
-**Hyper Key:** Hold D or H for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
+**Hyper Key:** Hold W or H for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
 
 ### Layer 1: NAV
 ```

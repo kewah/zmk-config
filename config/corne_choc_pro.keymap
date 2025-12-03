@@ -306,19 +306,19 @@
         compatible = "zmk,keymap";
 
         default_layer {
-            display-name = "COLEMAK";
+            display-name = "BASE";
             // --------------------------------------------------------------------------------
-            // |  `   |  Q  |  W  |  F  |  P  |  B  |  MUTE |  PP   |  J  |  L   |  U  |  Y  |  ;  |PROFILE|
-            // |G-SPC |  A  |  R  |  S  |  T  |  G  |  LALT |  RALT |  M  |  N   |  E  |  I  |  O  |  '   |
-            // |      | GUI | ALT | CTL | SFT |     |       |       |     | SFT  | CTL | ALT | GUI |      |
-            // | ⌘[  |  Z  |  X  |  C  |  D  |  V  |               |  K  |  H   |  ,  |  .  |  /  |  ⌘]  |
-            // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
-            //                    | ESC | ENT | TAB |               | BSPC| SPC | RPT |
+            // |  `   |  V  |  M  |  L  |  C  |  P  |  MUTE |  PP   |  X  |  F   |  O  |  U  |  J  | DEL  |
+            // |G-SPC |  S  |  T  |  R  |  D  |  Y  |  LALT |  RALT |  .  |  N   |  A  |  E  |  I  |  -   |
+            // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT  | GUI | ALT | CTL |      |
+            // |      |  Z  |  K  |  Q  |  G  |  W  |               |  B  |  H   |  '  |  ;  |  ,  |  /   |
+            // |      |     |     |     |     |HYPER|               |     |HYPER |     |     |     |      |
+            //                    | ESC | ENT | TAB |               | BSPC| SPC | MAG |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
-                &kp GRAVE     &kp Q         &kp W        &kp F         &kp P         &kp B &kp C_MUTE &kp C_PP &kp J &kp L         &kp U         &kp Y        &kp SEMI      &kp DEL
-                &kp LG(SPACE) &hml LCTRL A  &hml LALT R  &hml LGUI S   &hml LSHFT T  &kp G &kp LALT   &kp RALT &kp M &hmr LSHFT N  &hmr LGUI E   &hmr LALT I  &hmr LCTRL O  &kp SQT
-                &kp LG(LBKT)    &kp Z       &kp X        &kp C         &hypl 0 D     &kp V                     &kp K &hypr 0 H     &kp COMMA     &kp DOT      &kp FSLH      &kp LG(RBKT)
+                &kp GRAVE     &kp V         &kp M        &kp L         &kp C         &kp P &kp C_MUTE &kp C_PP &kp X &kp F         &kp O         &kp U        &kp J         &kp DEL
+                &kp LG(SPACE) &hml LCTRL S  &hml LALT T  &hml LGUI R   &hml LSHFT D  &kp Y &kp LALT   &kp RALT &kp DOT &hmr LSHFT N  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &kp MINUS
+                &none           &kp Z       &kp K        &kp Q         &kp G         &hypl 0 W                 &kp B &hypr 0 H     &kp SQT       &kp SEMI     &kp COMMA     &kp FSLH
                                                      &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_magic 6 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
