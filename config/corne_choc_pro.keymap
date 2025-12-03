@@ -403,13 +403,13 @@
             display-name = "FUN";
             // -----------------------------------------------------------------------------------------
             // |      | F12 |  F9 |  F8 |  F7 |     |       |       | TOG | HUI | HUD | BRI | BRD | EFF  |
-            // |      | F10 |  F3 |  F2 |  F1 |     |       |       |     | BT0 | BT1 | BT2 | BT3 | BT4  |
-            // |      | F11 |  F6 |  F5 |  F4 |     |               |     |BTCLR|     |     |     |      |
-            //                    |     |     |     |               |     |     |     |
+            // |      | F10 |  F3 |  F2 |  F1 |     |       |       |     |     |     |     |     |      |
+            // |      | F11 |  F6 |  F5 |  F4 |     |               |BTCLR| BT0 | BT1 | BT2 | BT3 | BT4  |
+            //                    |     |     |     |               |     |     | ### |
             bindings = <
                 &trans &kp F12 &kp F9 &kp F8 &kp F7 &trans &trans &trans &rgb_ug RGB_TOG &rgb_ug RGB_HUI &rgb_ug RGB_HUD &rgb_ug RGB_BRI &rgb_ug RGB_BRD &rgb_ug RGB_EFF
-                &trans &kp F10 &kp F3 &kp F2 &kp F1 &trans &trans &trans &trans          &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
-                &trans &kp F11 &kp F6 &kp F5 &kp F4 &trans               &trans          &bt BT_CLR      &trans          &trans          &trans          &trans
+                &trans &kp F10 &kp F3 &kp F2 &kp F1 &trans &trans &trans &trans          &trans          &trans          &trans          &trans          &trans
+                &trans &kp F11 &kp F6 &kp F5 &kp F4 &trans               &bt BT_CLR      &bt BT_SEL 0    &bt BT_SEL 1    &bt BT_SEL 2    &bt BT_SEL 3    &bt BT_SEL 4
                                       &trans &trans &trans               &trans &trans &trans
             >;
         };
