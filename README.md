@@ -21,6 +21,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ ENT │ TAB │       │BSPC │ SPC │ MAG │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
+                  │  4  │  1  │  2  │       │  2  │  3  │  5  │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
@@ -43,37 +44,24 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **NAV Combos:** N+E = previous word (⌥←), E+I = next word (⌥→)
 
-### Layer 2: SYM-L (left thumb TAB)
+### Layer 2: SYM (TAB or BSPC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │     │     │     │     │     │       │  ^  │  &  │  |  │  @  │ =>  │     │
+│     │  `  │  <  │  >  │  -  │  |  │       │  ^  │  {  │  }  │  $  │ =>  │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │ CTL │ ALT │ GUI │ SFT │     │       │  #  │  ?  │  :  │  =  │  !  │  ;  │
+│     │  !  │  *  │  /  │  =  │  &  │       │  #  │  (  │  )  │  ;  │  "  │     │
+│     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │     │     │     │     │     │       │  $  │ ??  │ ?.  │ &&  │ ||  │  ,  │
+│     │  ~  │  +  │  [  │  ]  │  %  │       │  @  │  :  │  ,  │  .  │  '  │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │ ### │       │     │     │     │
+                  │     │     │ ### │       │ ### │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Left thumb activates right-side symbols with left-side home row mods.
+Either thumb (TAB or BSPC) activates. Home row symbols have HRM: hold for modifier, tap for symbol.
 
-### Layer 3: SYM-R (right thumb BSPC)
-```
-┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │  `  │  *  │  +  │  -  │  ~  │       │     │     │     │     │     │     │
-├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  (  │  {  │  [  │  /  │  _  │       │     │ SFT │ GUI │ ALT │ CTL │     │
-├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  )  │  }  │  ]  │  \  │  %  │       │     │     │     │     │     │     │
-└─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │     │     │       │ ### │     │     │
-                  └─────┴─────┴─────┘       └─────┴─────┴─────┘
-```
-Right thumb activates left-side symbols with right-side home row mods.
+**Arrow:** `=>` tap, `->` shift+tap.
 
-**Macros:** `=>` fat arrow, `??` null coalescing, `?.` optional chaining, `&&` logical and, `||` logical or.
-
-### Layer 4: NUM
+### Layer 3: NUM (SPC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │  /  │  9  │  8  │  7  │  *  │       │     │     │     │     │     │     │
@@ -87,7 +75,7 @@ Right thumb activates left-side symbols with right-side home row mods.
 ```
 Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
 
-### Layer 5: MEDIA
+### Layer 4: MEDIA (ESC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │     │     │     │     │     │       │     │     │     │     │     │     │
@@ -101,7 +89,7 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ```
 Hold ESC to access. Volume and track controls on right home row, mute/play on right thumbs.
 
-### Layer 6: FUN
+### Layer 5: FUN (MAG)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │ F12 │ F9  │ F8  │ F7  │     │       │ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │

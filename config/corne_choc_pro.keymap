@@ -162,6 +162,13 @@
 
 / {
     behaviors {
+        arrow_morph: arrow_morph {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&fat_arrow>, <&thin_arrow>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
         hyp: hyper_tap {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -319,7 +326,7 @@
                 &kp GRAVE     &kp V         &kp M        &kp L         &kp C         &kp P &kp C_MUTE &kp C_PP &kp X &kp F         &kp O         &kp U        &kp J         &kp DEL
                 &kp LG(SPACE) &hml LCTRL S  &hml LALT T  &hml LGUI R   &hml LSHFT D  &kp Y &kp LALT   &kp RALT &kp DOT &hmr LSHFT N  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &kp MINUS
                 &none           &kp Z       &kp K        &kp Q         &hypl 0 G     &kp W                     &kp B &hypr 0 H     &kp SQT       &kp SEMI     &kp COMMA     &kp FSLH
-                                                     &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_magic 6 0
+                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &fun_magic 5 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
@@ -339,33 +346,19 @@
             >;
         };
 
-        sym_left_layer {
-            display-name = "SYM-L";
+        sym_layer {
+            display-name = "SYM";
             // -----------------------------------------------------------------------------------------
-            // |      |     |     |     |     |     |       |       |  ^  |  &  |  |  |  @  | =>  |      |
-            // |      | GUI | ALT | CTL | SFT |     |       |       |  #  |  ?  |  :  |  =  |  !  |  ;   |
-            // |      |     |     |     |     |     |               |  $  | ??  | ?.  | &&  | ||  |  ,   |
+            // |      |  `  |  <  |  >  |  -  |  |  |       |       |  ^  |  {  |  }  |  $  | =>  |      |
+            // |      |  !  |  *  |  /  |  =  |  &  |       |       |  #  |  (  |  )  |  ;  |  "  |      |
+            // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT | GUI | ALT | CTL |      |
+            // |      |  ~  |  +  |  [  |  ]  |  %  |               |  @  |  :  |  ,  |  .  |  '  |      |
             //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &trans    &trans   &trans    &trans    &trans    &trans &trans &kp CARET &kp AMPS   &kp PIPE   &kp AT    &fat_arrow &trans
-                &trans &kp LCTRL &kp LALT &kp LGUI  &kp LSHFT &trans    &trans &trans &kp HASH  &kp QMARK  &kp COLON  &kp EQUAL &kp EXCL   &kp SEMI
-                &trans &trans    &trans   &trans    &trans    &trans                  &kp DLLR  &null_coal &opt_chain &log_and  &log_or    &kp COMMA
-                                          &trans    &trans    &trans                  &trans    &trans     &trans
-            >;
-        };
-
-        sym_right_layer {
-            display-name = "SYM-R";
-            // -----------------------------------------------------------------------------------------
-            // |      |  `  |  *  |  +  |  -  |  ~  |       |       |     |     |     |     |     |      |
-            // |      |  (  |  {  |  [  |  /  |  _  |       |       |     | SFT | CTL | ALT | GUI |      |
-            // |      |  )  |  }  |  ]  |  \  |  %  |               |     |     |     |     |     |      |
-            //                    |     |     |     |               |     |     |     |
-            bindings = <
-                &trans &kp GRAVE &kp ASTRK &kp PLUS  &kp MINUS &kp TILDE &trans &trans &trans &trans    &trans    &trans   &trans    &trans
-                &trans &kp LPAR  &kp LBRC  &kp LBKT  &kp FSLH  &kp UNDER &trans &trans &trans &kp LSHFT &kp LGUI  &kp LALT &kp LCTRL &trans
-                &trans &kp RPAR  &kp RBRC  &kp RBKT  &kp BSLH  &kp PRCNT               &trans &trans    &trans    &trans   &trans    &trans
-                                           &trans    &trans    &trans                  &trans &trans    &trans
+                &trans &kp GRAVE        &kp LT         &kp GT        &kp MINUS       &kp PIPE &trans &trans &kp CARET &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
+                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI FSLH &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT SEMI &hmr LCTRL DQT &trans
+                &trans &kp TILDE        &kp PLUS       &kp LBKT      &kp RBKT        &kp PRCNT              &kp AT    &kp COLON      &kp COMMA     &kp DOT      &kp SQT         &trans
+                                                       &trans        &trans          &trans                 &trans    &trans         &trans
             >;
         };
 
