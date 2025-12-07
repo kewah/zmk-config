@@ -17,7 +17,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  Z  │  K  │  Q  │  G  │  W  │       │  B  │  H  │  '  │  ;  │  ,  │  /  │
-│     │     │     │     │     │ HYP │       │     │ HYP │     │     │     │     │
+│     │     │     │     │ HYP │     │       │     │ HYP │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ ENT │ TAB │       │BSPC │ SPC │ MAG │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
@@ -26,7 +26,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Home Row Mods:** Hold S/T/R/D or N/A/E/I for CTRL/ALT/GUI/SHIFT (left) or SHIFT/GUI/ALT/CTRL (right). All mods use left keycodes. Bilateral combinations prevent misfires.
 
-**Hyper Key:** Hold W or H for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
+**Hyper Key:** Hold G or H for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
 
 ### Layer 1: NAV
 ```

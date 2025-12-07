@@ -312,13 +312,13 @@
             // |G-SPC |  S  |  T  |  R  |  D  |  Y  |  LALT |  RALT |  .  |  N   |  A  |  E  |  I  |  -   |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT  | GUI | ALT | CTL |      |
             // |      |  Z  |  K  |  Q  |  G  |  W  |               |  B  |  H   |  '  |  ;  |  ,  |  /   |
-            // |      |     |     |     |     |HYPER|               |     |HYPER |     |     |     |      |
+            // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
             //                    | ESC | ENT | TAB |               | BSPC| SPC | MAG |
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &kp GRAVE     &kp V         &kp M        &kp L         &kp C         &kp P &kp C_MUTE &kp C_PP &kp X &kp F         &kp O         &kp U        &kp J         &kp DEL
                 &kp LG(SPACE) &hml LCTRL S  &hml LALT T  &hml LGUI R   &hml LSHFT D  &kp Y &kp LALT   &kp RALT &kp DOT &hmr LSHFT N  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &kp MINUS
-                &none           &kp Z       &kp K        &kp Q         &kp G         &hypl 0 W                 &kp B &hypr 0 H     &kp SQT       &kp SEMI     &kp COMMA     &kp FSLH
+                &none           &kp Z       &kp K        &kp Q         &hypl 0 G     &kp W                     &kp B &hypr 0 H     &kp SQT       &kp SEMI     &kp COMMA     &kp FSLH
                                                      &hm 5 ESC &hm 1 RET &hm 2 TAB                        &hm 3 BSPC &hm 4 SPACE &fun_magic 6 0
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
