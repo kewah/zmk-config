@@ -14,10 +14,10 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │  `  │  B  │  L  │  D  │  W  │  Z  │       │  '  │  F  │  O  │  U  │  J  │ NAV │
 │  ~  │     │     │     │     │     │       │  _  │     │     │     │     │ tog │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
+│ CTL │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │  ?  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  .  │  -  │  /  │  ;  │
+│ ML  │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  .  │  -  │  /  │  ;  │
 │     │     │     │     │ HYP │     │       │     │ HYP │  >  │  "  │  <  │  :  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ ENT │ TAB │       │BSPC │ SPC │⌘SPC │
@@ -31,6 +31,8 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 **Hyper Key:** Hold C or P for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
+
+**Outer Column:** CTL = standalone Ctrl for vim combos. ML = Mouseless trigger (Hyper+Enter).
 
 **Word Delete Combos:** H+A = delete prev word (⌥⌫), A+E = delete next word (⌥⌦). Word nav (⌥←/⌥→) available on NAV layer.
 
