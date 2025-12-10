@@ -12,5 +12,8 @@ manifest:
     - name: zmk-adaptive-key
       remote: urob
       revision: main
+    - name: zmk-mouse-keys
+      remote: urob
+      revision: main
   self:
     path: config
