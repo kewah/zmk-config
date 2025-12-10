@@ -32,7 +32,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
 
-**Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→). Combine with S (shift) for word selection.
+**Word Delete Combos:** H+A = delete prev word (⌥⌫), A+E = delete next word (⌥⌦). Word nav (⌥←/⌥→) available on NAV layer.
 
 ### Layer 1: NAV
 ```
