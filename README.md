@@ -8,26 +8,29 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 ## Corne Layout
 
-### Layer 0: BASE (Sturdy)
+### Layer 0: BASE (Graphite)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│  `  │  V  │  M  │  L  │  C  │  P  │       │  X  │  F  │  O  │  U  │  J  │ DEL │
+│  `  │  B  │  L  │  D  │  W  │  Z  │       │  '  │  F  │  O  │  U  │  J  │     │
+│  ~  │     │     │     │     │     │       │  _  │     │     │     │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│⌘SPC │  S  │  T  │  R  │  D  │  Y  │       │  .  │  N  │  A  │  E  │  I  │  -  │
-│     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │     │
+│     │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
+│     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │  ?  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  Z  │  K  │  Q  │  G  │  W  │       │  B  │  H  │  '  │  ;  │  ,  │  /  │
-│     │     │     │     │ HYP │     │       │     │ HYP │     │     │     │     │
+│     │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  .  │  -  │  /  │  ;  │
+│     │     │     │     │ HYP │     │       │     │ HYP │  >  │  "  │  <  │  :  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │ MAG │
+                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │⌘SPC │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
                   │  4  │  1  │  2  │       │  2  │  3  │  5  │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
-**Home Row Mods:** Hold S/T/R/D or N/A/E/I for CTRL/ALT/GUI/SHIFT (left) or SHIFT/GUI/ALT/CTRL (right). All mods use left keycodes. Bilateral combinations prevent misfires.
+**Home Row Mods:** Hold N/R/T/S or H/A/E/I for CTRL/ALT/GUI/SHIFT (left) or SHIFT/GUI/ALT/CTRL (right). All mods use left keycodes. Bilateral combinations prevent misfires.
 
-**Hyper Key:** Hold G or H for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
+**Hyper Key:** Hold C or P for Hyper (⌃⇧⌥⌘) modifier chord. Bilateral like home row mods.
+
+**Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
 
 ### Layer 1: NAV
 ```
@@ -42,7 +45,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 
-**NAV Combos:** N+E = previous word (⌥←), E+I = next word (⌥→)
+**NAV Combos:** H+A = previous word (⌥←), A+E = next word (⌥→)
 
 ### Layer 2: SYM (TAB or BSPC)
 ```
@@ -89,7 +92,7 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ```
 Hold ESC to access. Volume and track controls on right home row, mute/play on right thumbs.
 
-### Layer 5: FUN (MAG)
+### Layer 5: FUN (⌘SPC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │ F12 │ F9  │ F8  │ F7  │     │       │ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │
@@ -101,62 +104,7 @@ Hold ESC to access. Volume and track controls on right home row, mute/play on ri
                   │     │     │     │       │     │     │ ### │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold Magic key to access. F-keys mirror NUM layer positions. Right side: RGB controls (TOG/HUI/HUD/BRI/BRD/EFF) and Bluetooth profile selection (BT0-4, BTCLR).
-
-## Magic Key
-
-The right thumb key (tap) is a context-aware "magic" key using [zmk-adaptive-key](https://github.com/urob/zmk-adaptive-key). It outputs different results based on the last key pressed. Fallback is normal repeat.
-
-### Navigation Reversals
-| After | Magic outputs |
-|-------|---------------|
-| ← | → |
-| → | ← |
-| ↑ | ↓ |
-| ↓ | ↑ |
-| Home | End |
-| End | Home |
-| PgUp | PgDn |
-| PgDn | PgUp |
-| Bspc | Del |
-| Del | Bspc |
-
-### Bracket Pairs
-| After | Magic outputs |
-|-------|---------------|
-| `[` | `]` |
-| `]` | `[` |
-| `{` | `}` |
-| `}` | `{` |
-| `(` | `)` |
-| `)` | `(` |
-
-### Text Completions (Magic Sturdy inspired)
-| After | Magic outputs | Example |
-|-------|---------------|---------|
-| A | ND | a**nd** |
-| B | ECAUSE | b**ecause** |
-| C | Y | c**y**cle |
-| D | Y | d**y**namic |
-| E | U | e**u**ro |
-| G | Y | g**y**m |
-| I | NG | i**ng** |
-| J | UST | j**ust** |
-| K | S | k**s** |
-| M | ENT | m**ent**al |
-| N | ION | n**ion** (union) |
-| O | A | o**a**k |
-| P | Y | p**y**thon |
-| T | MENT | t**ment** (treatment) |
-| U | E | u**e** (true) |
-| V | ER | v**er**y |
-| W | OULD | w**ould** |
-| X | ES | x**es** (boxes) |
-| Y | OU | y**ou** |
-| `,` | ` AND` | **, and** |
-| `=` | `>` | `=>` |
-
-**Note:** Magic completions replace normal repeat for mapped keys. Unmapped keys (F, H, L, Q, R, S, Z, numbers, etc.) still repeat normally.
+Hold ⌘SPC to access. F-keys mirror NUM layer positions. Right side: RGB controls (TOG/HUI/HUD/BRI/BRD/EFF) and Bluetooth profile selection (BT0-4, BTCLR).
 
 ## Flash
 

@@ -21,14 +21,14 @@
 
         combo_prev_word {
             timeout-ms = <50>;
-            key-positions = <23 24>;  // N + E
+            key-positions = <23 24>;  // H + A
             bindings = <&kp LA(LEFT)>;
             layers = <1>;  // NAV layer only
         };
 
         combo_next_word {
             timeout-ms = <50>;
-            key-positions = <24 25>;  // E + I
+            key-positions = <24 25>;  // A + E
             bindings = <&kp LA(RIGHT)>;
             layers = <1>;  // NAV layer only
         };
@@ -91,72 +91,6 @@
             bindings = <&key_repeat>;
         };
 
-        // Magic key macros
-        m_ment: m_ment {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp M &kp E &kp N &kp T>;
-        };
-        m_ust: m_ust {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp U &kp S &kp T>;
-        };
-        m_ent: m_ent {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp N &kp T>;
-        };
-        m_ion: m_ion {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp I &kp O &kp N>;
-        };
-        m_er: m_er {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp R>;
-        };
-        m_hich: m_hich {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp H &kp I &kp C &kp H>;
-        };
-        m_es: m_es {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp S>;
-        };
-        m_nd: m_nd {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp D>;
-        };
-        m_ng: m_ng {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp N &kp G>;
-        };
-        m_ou: m_ou {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U>;
-        };
-        m_ecause: m_ecause {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp E &kp C &kp A &kp U &kp S &kp E>;
-        };
-        m_ould: m_ould {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp O &kp U &kp L &kp D>;
-        };
-        m_and: m_and {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SPACE &kp A &kp N &kp D>;
-        };
     };
 };
 
@@ -166,6 +100,34 @@
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
             bindings = <&fat_arrow>, <&thin_arrow>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        sq_under: single_quote_underscore {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp SQT>, <&kp UNDER>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        comma_qmark: comma_question {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp COMMA>, <&kp QMARK>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        minus_dqt: minus_doublequote {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp MINUS>, <&kp DQT>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        slash_lt: slash_lessthan {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp FSLH>, <&kp LT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -214,7 +176,7 @@
             hold-trigger-on-release;
         };
 
-        // Hyper mod - left hand (D key)
+        // Hyper mod - left hand (C key)
         hypl: hyper_home_row_left {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -227,7 +189,7 @@
             hold-trigger-on-release;
         };
 
-        // Hyper mod - right hand (H key)
+        // Hyper mod - right hand (P key)
         hypr: hyper_home_row_right {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -246,14 +208,6 @@
             tapping-term-ms = <200>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&key_repeat_param>;
-        };
-
-        fun_magic: fun_layer_magic {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            tapping-term-ms = <200>;
-            flavor = "tap-preferred";
-            bindings = <&mo>, <&magic>;
         };
 
         magic: magic_key {
@@ -281,28 +235,6 @@
             br_lpar { trigger-keys = <LPAR>; bindings = <&kp RPAR>; };
             br_rpar { trigger-keys = <RPAR>; bindings = <&kp LPAR>; };
 
-            // Magic completions
-            mag_a { trigger-keys = <A>; bindings = <&m_nd>; };
-            mag_b { trigger-keys = <B>; bindings = <&m_ecause>; };
-            mag_c { trigger-keys = <C>; bindings = <&kp Y>; };
-            mag_d { trigger-keys = <D>; bindings = <&kp Y>; };
-            mag_e { trigger-keys = <E>; bindings = <&kp U>; };
-            mag_g { trigger-keys = <G>; bindings = <&kp Y>; };
-            mag_i { trigger-keys = <I>; bindings = <&m_ng>; };
-            mag_j { trigger-keys = <J>; bindings = <&m_ust>; };
-            mag_k { trigger-keys = <K>; bindings = <&kp S>; };
-            mag_m { trigger-keys = <M>; bindings = <&m_ent>; };
-            mag_n { trigger-keys = <N>; bindings = <&m_ion>; };
-            mag_o { trigger-keys = <O>; bindings = <&kp A>; };
-            mag_p { trigger-keys = <P>; bindings = <&kp Y>; };
-            mag_t { trigger-keys = <T>; bindings = <&m_ment>; };
-            mag_u { trigger-keys = <U>; bindings = <&kp E>; };
-            mag_v { trigger-keys = <V>; bindings = <&m_er>; };
-            mag_w { trigger-keys = <W>; bindings = <&m_ould>; };
-            mag_x { trigger-keys = <X>; bindings = <&m_es>; };
-            mag_y { trigger-keys = <Y>; bindings = <&m_ou>; };
-            mag_comma { trigger-keys = <COMMA>; bindings = <&m_and>; };
-            mag_equal { trigger-keys = <EQUAL>; bindings = <&kp GT>; };
         };
 
     };
@@ -315,18 +247,18 @@
         default_layer {
             display-name = "BASE";
             // --------------------------------------------------------------------------------
-            // |  `   |  V  |  M  |  L  |  C  |  P  |  MUTE |  PP   |  X  |  F   |  O  |  U  |  J  | DEL  |
-            // |G-SPC |  S  |  T  |  R  |  D  |  Y  |  LALT |  RALT |  .  |  N   |  A  |  E  |  I  |  -   |
+            // |  `   |  B  |  L  |  D  |  W  |  Z  |  MUTE |  PP   |  '  |  F   |  O  |  U  |  J  |      |
+            // |      |  N  |  R  |  T  |  S  |  G  |  LALT |  RALT |  Y  |  H   |  A  |  E  |  I  |  ,   |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT  | GUI | ALT | CTL |      |
-            // |      |  Z  |  K  |  Q  |  G  |  W  |               |  B  |  H   |  '  |  ;  |  ,  |  /   |
+            // |      |  Q  |  X  |  M  |  C  |  V  |               |  K  |  P   |  .  |  -  |  /  |  ;   |
             // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
-            //                    | ESC | ENT | TAB |               | BSPC| SPC | MAG |
+            //                    | ESC | ENT | TAB |               | BSPC| SPC |G-SPC|
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
-                &kp GRAVE     &kp V         &kp M        &kp L         &kp C         &kp P &kp C_MUTE &kp C_PP &kp X &kp F         &kp O         &kp U        &kp J         &kp DEL
-                &kp LG(SPACE) &hml LCTRL S  &hml LALT T  &hml LGUI R   &hml LSHFT D  &kp Y &kp LALT   &kp RALT &kp DOT &hmr LSHFT N  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &kp MINUS
-                &none           &kp Z       &kp K        &kp Q         &hypl 0 G     &kp W                     &kp B &hypr 0 H     &kp SQT       &kp SEMI     &kp COMMA     &kp FSLH
-                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &fun_magic 5 0
+                &kp GRAVE     &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &sq_under &kp F         &kp O         &kp U        &kp J         &none
+                &none         &hml LCTRL N  &hml LALT R  &hml LGUI T   &hml LSHFT S  &kp G &kp LALT   &kp RALT &kp Y     &hmr LSHFT H  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &comma_qmark
+                &none         &kp Q         &kp X        &kp M         &hypl 0 C     &kp V                     &kp K     &hypr 0 P     &kp DOT       &minus_dqt   &slash_lt     &kp SEMI
+                                                     &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &hm 5 LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
         };
