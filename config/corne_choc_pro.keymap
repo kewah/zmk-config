@@ -247,7 +247,7 @@
         default_layer {
             display-name = "BASE";
             // --------------------------------------------------------------------------------
-            // |  `   |  B  |  L  |  D  |  W  |  Z  |  MUTE |  PP   |  '  |  F   |  O  |  U  |  J  |      |
+            // |  `   |  B  |  L  |  D  |  W  |  Z  |  MUTE |  PP   |  '  |  F   |  O  |  U  |  J  | NAV  |
             // |      |  N  |  R  |  T  |  S  |  G  |  LALT |  RALT |  Y  |  H   |  A  |  E  |  I  |  ,   |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT  | GUI | ALT | CTL |      |
             // |      |  Q  |  X  |  M  |  C  |  V  |               |  K  |  P   |  .  |  -  |  /  |  ;   |
@@ -255,7 +255,7 @@
             //                    | ESC | ENT | TAB |               | BSPC| SPC |G-SPC|
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
-                &kp GRAVE     &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &sq_under &kp F         &kp O         &kp U        &kp J         &none
+                &kp GRAVE     &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &sq_under &kp F         &kp O         &kp U        &kp J         &tog 1
                 &none         &hml LCTRL N  &hml LALT R  &hml LGUI T   &hml LSHFT S  &kp G &kp LALT   &kp RALT &kp Y     &hmr LSHFT H  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &comma_qmark
                 &none         &kp Q         &kp X        &kp M         &hypl 0 C     &kp V                     &kp K     &hypr 0 P     &kp DOT       &minus_dqt   &slash_lt     &kp SEMI
                                                      &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &hm 5 LG(SPACE)
