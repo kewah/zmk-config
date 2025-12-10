@@ -32,6 +32,8 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
 
+**Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→). Combine with S (shift) for word selection.
+
 ### Layer 1: NAV
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
@@ -44,8 +46,6 @@ Push to GitHub → Actions tab → Download `firmware.zip`
                   │     │ ### │     │       │     │     │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-
-**NAV Combos:** H+A = previous word (⌥←), A+E = next word (⌥→)
 
 ### Layer 2: SYM (TAB or BSPC)
 ```
