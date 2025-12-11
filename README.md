@@ -14,7 +14,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │  `  │  B  │  L  │  D  │  W  │  Z  │       │  '  │  F  │  O  │  U  │  J  │ NAV │
 │  ~  │     │     │     │     │     │       │  _  │     │     │     │     │ tog │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│ CTL │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
+│BSPC │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │  ?  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │ ML  │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  .  │  -  │  /  │  ;  │
@@ -32,7 +32,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
 
-**Outer Column:** CTL = standalone Ctrl for vim combos. ML = Mouseless trigger (Hyper+Enter).
+**Outer Column:** BSPC = dedicated backspace. ML = Mouseless trigger (Hyper+Enter).
 
 **Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→) on NAV layer only.
 
