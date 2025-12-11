@@ -34,7 +34,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Outer Column:** CTL = standalone Ctrl for vim combos. ML = Mouseless trigger (Hyper+Enter).
 
-**Word Delete Combos:** H+A = delete prev word (⌥⌫), A+E = delete next word (⌥⌦). Word nav (⌥←/⌥→) available on NAV layer.
+**Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→) on NAV layer only.
 
 ### Layer 1: NAV
 ```

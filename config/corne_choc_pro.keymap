@@ -20,20 +20,6 @@
     combos {
         compatible = "zmk,combos";
 
-        combo_del_prev_word {
-            timeout-ms = <50>;
-            key-positions = <23 24>;  // H + A
-            bindings = <&kp LA(BSPC)>;
-            layers = <0>;  // BASE layer
-        };
-
-        combo_del_next_word {
-            timeout-ms = <50>;
-            key-positions = <24 25>;  // A + E
-            bindings = <&kp LA(DEL)>;
-            layers = <0>;  // BASE layer
-        };
-
         combo_nav_prev_word {
             timeout-ms = <50>;
             key-positions = <23 24>;  // H + A
