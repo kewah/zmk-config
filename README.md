@@ -83,16 +83,16 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex in
 ### Layer 4: MEDIA (ESC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
-│     │     │     │VOL- │VOL+ │     │       │     │WH_D │ M↑  │WH_U │     │     │
+│     │     │     │VOL- │VOL+ │     │       │     │WH_D │     │WH_U │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │STOP │PLAY │PREV │NEXT │     │       │     │ M←  │ M↓  │ M→  │     │     │
+│     │STOP │PLAY │PREV │NEXT │     │       │ M←  │ M↓  │ M↑  │ M→  │     │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │     │BRI- │BRI+ │MUTE │     │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ### │     │     │       │BTN2 │BTN1 │BTN3 │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold ESC to access. Left: media controls (STOP/PLAY/PREV/NEXT), volume, brightness, mute. Right: mouse movement (OHAE positions), scroll (F/U), buttons on thumbs (L/M/R click).
+Hold ESC to access. Left: media controls (STOP/PLAY/PREV/NEXT), volume, brightness, mute. Right: mouse movement (YHAE home row), scroll (F/U), buttons on thumbs (L/M/R click).
 
 ### Layer 5: FUN (⌘SPC)
 ```
