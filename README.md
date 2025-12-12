@@ -14,11 +14,11 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │  `  │  B  │  L  │  D  │  W  │  Z  │       │  '  │  F  │  O  │  U  │  J  │ NAV │
 │  ~  │     │     │     │     │     │       │  _  │     │     │     │     │ tog │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│BSPC │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
+│ ML  │  N  │  R  │  T  │  S  │  G  │       │  Y  │  H  │  A  │  E  │  I  │  ,  │
 │     │ CTL │ ALT │ GUI │ SFT │     │       │     │ SFT │ GUI │ ALT │ CTL │  ?  │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│ ML  │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  .  │  -  │  /  │  ;  │
-│     │     │     │     │ HYP │     │       │     │ HYP │  >  │  "  │  <  │  :  │
+│BSPC │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  -  │  .  │  /  │  ;  │
+│     │     │     │     │ HYP │     │       │     │ HYP │  "  │  >  │  <  │  :  │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │ ESC │ ENT │ TAB │       │BSPC │ SPC │⌘SPC │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
@@ -32,7 +32,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `/`→`<`
 
-**Outer Column:** BSPC = dedicated backspace. ML = Mouseless trigger (Hyper+Enter).
+**Outer Column:** ML = Mouseless trigger (Hyper+Enter). BSPC = dedicated backspace.
 
 **Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→) on NAV layer only.
 
