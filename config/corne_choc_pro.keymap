@@ -279,12 +279,12 @@
         nav_layer {
             display-name = "NAV";
             // -----------------------------------------------------------------------------------------
-            // |      |     |     |     |     |     |       |       |     |  {  |  }  |     |     |      |
+            // |      |     |     |     | ⌘` |     |       |       |     |  {  |  }  |     |     |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       | LFT | DWN |  UP | RGT |     |      |
             // |      |     |     | BCK | FWD |     |       |       |HOME |PGDN |PGUP | END |     |      |
             //                    |     | ### |     |       |     |     |     |
             bindings = <
-                &trans &trans    &trans   &trans       &trans       &trans &trans &trans &trans   &kp RBRC  &kp LBRC  &trans    &trans &trans
+                &trans &trans    &trans   &trans       &kp LG(GRAVE) &trans &trans &trans &trans   &kp RBRC  &kp LBRC  &trans    &trans &trans
                 &trans &kp LCTRL &kp LALT &kp LGUI     &kp LSHFT    &trans &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
                 &trans &trans    &trans   &kp LG(LBKT) &kp LG(RBKT) &trans               &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans
                                           &trans       &trans       &trans               &trans   &trans    &trans
@@ -294,15 +294,15 @@
         sym_layer {
             display-name = "SYM";
             // -----------------------------------------------------------------------------------------
-            // |      |  `  |  <  |  >  |  -  |  |  |       |       |  ^  |  {  |  }  |  $  | =>  |      |
-            // |      |  !  |  *  |  /  |  =  |  &  |       |       |  #  |  (  |  )  |  ;  |  "  |      |
+            // |      |  `  |  <  |  >  |  +  |  |  |       |       |  '  |  {  |  }  |  $  | =>  |      |
+            // |      |  !  |  *  |  /  |  =  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT | GUI | ALT | CTL |      |
-            // |      |  ~  |  +  |  [  |  ]  |  %  |               |  @  |  :  |  ,  |  .  |  '  |      |
+            // |      |  ~  |  ^  |     |  -  |  %  |               |  @  |  [  |  ]  |     |     |      |
             //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &kp GRAVE        &kp LT         &kp GT        &kp MINUS       &kp PIPE &trans &trans &kp CARET &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
-                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI FSLH &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT SEMI &hmr LCTRL DQT &trans
-                &trans &kp TILDE        &kp PLUS       &kp LBKT      &kp RBKT        &kp PRCNT              &kp AT    &kp COLON      &kp COMMA     &kp DOT      &kp SQT         &trans
+                &trans &kp GRAVE        &kp LT         &kp GT        &kp PLUS        &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
+                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI FSLH &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
+                &trans &kp TILDE        &kp CARET      &trans        &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
                                                        &trans        &trans          &trans                 &trans    &trans         &trans
             >;
         };
