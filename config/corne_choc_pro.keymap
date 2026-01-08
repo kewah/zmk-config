@@ -285,7 +285,7 @@
             //                    |     | ### |     |       |     |     |     |
             bindings = <
                 &trans &trans    &trans   &trans       &kp LG(GRAVE) &trans &trans &trans &trans   &kp RBRC  &kp LBRC  &trans    &trans &trans
-                &trans &kp LCTRL &kp LALT &kp LGUI     &kp LSHFT    &trans &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
+                &trans &kp LCTRL &kp LALT &hml LGUI LG(C) &hml LSHFT LG(V) &trans &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
                 &trans &trans    &trans   &kp LG(LBKT) &kp LG(RBKT) &trans               &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans
                                           &trans       &trans       &trans               &trans   &trans    &trans
             >;
