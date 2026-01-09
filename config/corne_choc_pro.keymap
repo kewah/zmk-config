@@ -137,10 +137,17 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        slash_lt: slash_lessthan {
+        slash_bslh: slash_backslash {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp FSLH>, <&kp LT>;
+            bindings = <&kp FSLH>, <&kp BSLH>;
+            mods = <(MOD_LSFT|MOD_RSFT)>;
+        };
+
+        dot_excl: dot_exclamation {
+            compatible = "zmk,behavior-mod-morph";
+            #binding-cells = <0>;
+            bindings = <&kp DOT>, <&kp EXCL>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -264,13 +271,13 @@
             // |  ML  |  N  |  R  |  T  |  S  |  G  |  LALT |  RALT |  Y  |  H   |  A  |  E  |  I  |  '   |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT  | GUI | ALT | CTL |      |
             // |      |  Q  |  X  |  M  |  C  |  V  |               |  K  |  P   |  ,  |  .  |  /  |      |
-            // |      |     |     |     |HYPER|     |               |     |HYPER |     |     |     |      |
+            // |      |     |     |     |HYPER|     |               |     |HYPER |  ?  |  !  |  \  |      |
             //                    | ESC | ENT | TAB |               | BSPC| SPC |G-SPC|
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
                 &none         &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &minus_dqt &kp F         &kp O         &kp U        &kp J         &tog 1
                 &mouseless    &hml LCTRL N  &hml LALT R  &hml LGUI T   &hml LSHFT S  &kp G &kp LALT   &kp RALT &kp Y     &hmr LSHFT H  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &sq_under
-                &none         &kp Q         &kp X        &kp M         &hypl 0 C     &kp V                     &kp K     &hypr 0 P     &comma_qmark    &kp DOT      &slash_lt     &none
+                &none         &kp Q         &kp X        &kp M         &hypl 0 C     &kp V                     &kp K     &hypr 0 P     &comma_qmark    &dot_excl    &slash_bslh   &none
                                                      &hm 4 ESC &hm 1 RET &hm 2 TAB                        &hm 2 BSPC &hm 3 SPACE &hm 5 LG(SPACE)
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
@@ -294,15 +301,15 @@
         sym_layer {
             display-name = "SYM";
             // -----------------------------------------------------------------------------------------
-            // |      |  `  |  <  |  >  |  +  |  |  |       |       |  '  |  {  |  }  |  $  | =>  |      |
-            // |      |  !  |  *  |  /  |  =  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
+            // |      |  `  |  ~  |  <  |  >  |  |  |       |       |  '  |  {  |  }  |  $  | =>  |      |
+            // |      |  !  |  *  |  +  |  =  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT | GUI | ALT | CTL |      |
-            // |      |  ~  |  ^  |     |  -  |  %  |               |  @  |  [  |  ]  |     |     |      |
+            // |      |  ^  |     |  _  |  -  |  %  |               |  @  |  [  |  ]  |     |     |      |
             //                    |     |     |     |               |     |     |     |
             bindings = <
-                &trans &kp GRAVE        &kp LT         &kp GT        &kp PLUS        &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
-                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI FSLH &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
-                &trans &kp TILDE        &kp CARET      &trans        &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
+                &trans &kp GRAVE        &kp TILDE      &kp LT        &kp GT          &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
+                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI PLUS &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
+                &trans &kp CARET        &trans         &kp UNDER     &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
                                                        &trans        &trans          &trans                 &trans    &trans         &trans
             >;
         };
