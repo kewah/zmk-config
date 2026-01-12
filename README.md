@@ -76,7 +76,7 @@ Either thumb (TAB or BSPC) activates. Home row symbols have HRM: hold for modifi
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  X  │  4  │  5  │  6  │  %  │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │     │  0  │  =  │       │     │ ### │     │
+                  │  :  │  0  │  =  │       │     │ ### │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
 Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
