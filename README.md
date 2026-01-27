@@ -32,7 +32,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 
 **Custom Shifts:** `'`→`_`, `,`→`?`, `-`→`"`, `.`→`!`, `/`→`\`
 
-**Outer Column:** ML = Mouseless trigger (Hyper+Enter). BSPC = dedicated backspace.
+**Outer Column:** ML = Mouseless trigger (Hyper+Enter). BSPC = backspace (Shift+BSPC = Delete, quick-tap for fast repeat).
 
 **Word Nav Combos:** H+A = prev word (⌥←), A+E = next word (⌥→) on NAV layer only.
 
@@ -74,12 +74,12 @@ Either thumb (TAB or BSPC) activates. Home row symbols have HRM: hold for modifi
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
 │     │  -  │  1  │  2  │  3  │  +  │       │     │ SFT │ GUI │ ALT │ CTL │     │
 ├─────┼─────┼─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┼─────┼─────┤
-│     │  X  │  4  │  5  │  6  │  %  │       │     │     │     │     │     │     │
+│     │  .  │  4  │  5  │  6  │  %  │       │     │     │     │     │     │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
                   │  :  │  0  │  =  │       │     │ ### │     │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold SPC to access. Home row (1-2-3) optimized for frequent digits. X for hex input. Right-hand home row provides modifiers for modified number input.
+Hold SPC to access. Home row (1-2-3) optimized for frequent digits. DOT for decimal input. Right-hand home row provides modifiers for modified number input.
 
 ### Layer 4: MEDIA (ESC)
 ```
