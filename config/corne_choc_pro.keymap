@@ -116,6 +116,24 @@
             bindings = <&kp LG(RBKT)>;
         };
 
+        m_copy: m_copy {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(C)>;
+        };
+
+        m_paste: m_paste {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(V)>;
+        };
+
+        m_cut: m_cut {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LG(X)>;
+        };
+
     };
 };
 
@@ -128,10 +146,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        sq_under: single_quote_underscore {
+        dash_under: dash_underscore {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp SQT>, <&kp UNDER>;
+            bindings = <&kp MINUS>, <&kp UNDER>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -142,10 +160,10 @@
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
-        minus_dqt: minus_doublequote {
+        apo_dquote: apostrophe_doublequote {
             compatible = "zmk,behavior-mod-morph";
             #binding-cells = <0>;
-            bindings = <&kp MINUS>, <&kp DQT>;
+            bindings = <&kp SQT>, <&kp DQT>;
             mods = <(MOD_LSFT|MOD_RSFT)>;
         };
 
@@ -183,7 +201,8 @@
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
             tapping-term-ms = <200>;
-            quick-tap-ms = <0>;
+            quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&kp>;
         };
@@ -194,6 +213,7 @@
             #binding-cells = <2>;
             tapping-term-ms = <200>;
             quick-tap-ms = <175>;
+            require-prior-idle-ms = <150>;
             flavor = "tap-preferred";
             bindings = <&mo>, <&bspc_del>;
         };
@@ -252,6 +272,30 @@
             hold-trigger-on-release;
         };
 
+        ht_copy: hold_tap_copy {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&m_copy>;
+        };
+
+        ht_paste: hold_tap_paste {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&m_paste>;
+        };
+
+        ht_cut: hold_tap_cut {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            flavor = "balanced";
+            tapping-term-ms = <200>;
+            bindings = <&kp>, <&m_cut>;
+        };
+
         fun_repeat: fun_layer_repeat {
             compatible = "zmk,behavior-hold-tap";
             #binding-cells = <2>;
@@ -305,8 +349,8 @@
             //                    | ESC | ENT | TAB |               | BSPC| SPC |G-SPC|
             //                    |MEDIA| NAV | SYM |               | SYM | NUM | FUN |
             bindings = <
-                &none         &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &minus_dqt &kp F         &kp O         &kp U        &kp J         &tog 1
-                &mouseless    &hml LCTRL N  &hml LALT R  &hml LGUI T   &hml LSHFT S  &kp G &kp LALT   &kp RALT &kp Y     &hmr LSHFT H  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &sq_under
+                &none         &kp B         &kp L        &kp D         &kp W         &kp Z &kp C_MUTE &kp C_PP &apo_dquote &kp F         &kp O         &kp U        &kp J         &tog 1
+                &mouseless    &hml LCTRL N  &hml LALT R  &hml LGUI T   &hml LSHFT S  &kp G &kp LALT   &kp RALT &kp Y     &hmr LSHFT H  &hmr LGUI A   &hmr LALT E  &hmr LCTRL I  &dash_under
                 &none         &kp Q         &kp X        &kp M         &hypl 0 C     &kp V                     &kp K     &hypr 0 P     &comma_qmark    &dot_excl    &slash_bslh   &none
                                                      &hm 4 ESC &hm 1 RET &hm 2 TAB                        &lt_bspc 2 0 &hm 3 SPACE &hm 5 LG(SPACE)
             >;
@@ -321,9 +365,9 @@
             // |      |     |     | BCK | FWD |     |       |       |HOME |PGDN |PGUP | END |     |      |
             //                    |     | ### |     |       |     |     |     |
             bindings = <
-                &trans &trans    &trans   &trans       &kp LG(GRAVE) &trans &trans &trans &trans   &kp RBRC  &kp LBRC  &trans    &trans &trans
-                &trans &kp LCTRL &kp LALT &hml LGUI LG(C) &hml LSHFT LG(V) &trans &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &trans &trans
-                &trans &trans    &trans   &kp LG(LBKT) &kp LG(RBKT) &trans               &kp HOME &kp PG_DN &kp PG_UP &kp END   &trans &trans
+                &trans &none     &none    &none        &kp LG(GRAVE) &none  &trans &trans &none    &kp RBRC  &kp LBRC  &none     &none  &trans
+                &trans &kp LCTRL &ht_cut LALT 0 &ht_copy LGUI 0 &ht_paste LSHFT 0 &none &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &trans
+                &trans &none     &none    &m_back      &m_fwd       &none                &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
                                           &trans       &trans       &trans               &trans   &trans    &trans
             >;
         };
@@ -338,8 +382,8 @@
             //                    |     |     |     |               |     |     |     |
             bindings = <
                 &trans &kp GRAVE        &kp TILDE      &kp LT        &kp GT          &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
-                &trans &hml LCTRL EXCL  &hml LALT ASTRK &hml LGUI PLUS &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
-                &trans &kp CARET        &trans         &kp UNDER     &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
+                &trans &hml LCTRL EXCL  &hml LALT QMARK &hml LGUI PLUS &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
+                &trans &kp CARET        &kp ASTRK      &kp UNDER     &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
                                                        &trans        &trans          &trans                 &trans    &trans         &trans
             >;
         };
