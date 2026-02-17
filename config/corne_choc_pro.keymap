@@ -376,14 +376,14 @@
             display-name = "SYM";
             // -----------------------------------------------------------------------------------------
             // |      |  `  |  ~  |  <  |  >  |  |  |       |       |  '  |  {  |  }  |  $  | =>  |      |
-            // |      |  !  |  *  |  +  |  =  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
+            // |      |  !  |  *  |  -  |  _  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT | GUI | ALT | CTL |      |
-            // |      |  ^  |     |  _  |  -  |  %  |               |  @  |  [  |  ]  |     |     |      |
+            // |      |  ^  |     |  +  |  =  |  %  |               |  @  |  [  |  ]  |     |     |      |
             //                    |     |     |     |               |     |     |     |
             bindings = <
                 &trans &kp GRAVE        &kp TILDE      &kp LT        &kp GT          &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
-                &trans &hml LCTRL EXCL  &hml LALT QMARK &hml LGUI PLUS &hml LSHFT EQUAL &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
-                &trans &kp CARET        &kp ASTRK      &kp UNDER     &kp MINUS       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
+                &trans &hml LCTRL EXCL  &hml LALT QMARK &hml LGUI MINUS &hml LSHFT UNDER &kp AMPS &trans &trans &kp HASH  &hmr LSHFT LPAR &hmr LGUI RPAR &hmr LALT COLON &hmr LCTRL SEMI &trans
+                &trans &kp CARET        &kp ASTRK      &kp PLUS      &kp EQUAL       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
                                                        &trans        &trans          &trans                 &trans    &trans         &trans
             >;
         };
