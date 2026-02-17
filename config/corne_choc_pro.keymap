@@ -362,12 +362,12 @@
             // -----------------------------------------------------------------------------------------
             // |      |     |     |     | ⌘` |     |       |       |     |  {  |  }  |     |     |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       | LFT | DWN |  UP | RGT |     |      |
-            // |      |     |     | BCK | FWD |     |       |       |HOME |PGDN |PGUP | END |     |      |
+            // |      |     | RLD | BCK | FWD |     |       |       |HOME |PGDN |PGUP | END |     |      |
             //                    |     | ### |     |       |     |     |     |
             bindings = <
                 &trans &none     &none    &none        &kp LG(GRAVE) &none  &trans &trans &none    &kp RBRC  &kp LBRC  &none     &none  &trans
                 &trans &kp LCTRL &ht_cut LALT 0 &ht_copy LGUI 0 &ht_paste LSHFT 0 &none &trans &trans &kp LEFT &kp DOWN  &kp UP    &kp RIGHT &none  &trans
-                &trans &none     &none    &m_back      &m_fwd       &none                &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
+                &trans &none     &kp LG(R) &m_back     &m_fwd       &none                &kp HOME &kp PG_DN &kp PG_UP &kp END   &none  &trans
                                           &trans       &trans       &trans               &trans   &trans    &trans
             >;
         };
