@@ -20,7 +20,7 @@ Push to GitHub → Actions tab → Download `firmware.zip`
 │     │  Q  │  X  │  M  │  C  │  V  │       │  K  │  P  │  ,  │  .  │  /  │     │
 │     │     │     │     │ HYP │     │       │     │ HYP │  ?  │  !  │  \  │     │
 └─────┴─────┴─────┼─────┼─────┼─────┤       ├─────┼─────┼─────┼─────┴─────┴─────┘
-                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │⌘SPC │
+                  │ ESC │ ENT │ TAB │       │BSPC │ SPC │^SPC │
                   │MEDIA│ NAV │ SYM │       │ SYM │ NUM │ FUN │
                   │  4  │  1  │  2  │       │  2  │  3  │  5  │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
@@ -95,7 +95,7 @@ Hold SPC to access. Home row (1-2-3) optimized for frequent digits. DOT for deci
 ```
 Hold ESC to access. Left: media controls (STOP/PLAY/PREV/NEXT), volume, brightness, mute. Right: mouse movement (YHAE home row), scroll (F/O), buttons on thumbs (L/M/R click).
 
-### Layer 5: FUN (⌘SPC)
+### Layer 5: FUN (^SPC)
 ```
 ┌─────┬─────┬─────┬─────┬─────┬─────┐       ┌─────┬─────┬─────┬─────┬─────┬─────┐
 │     │ F12 │ F7  │ F8  │ F9  │     │       │ TOG │ HUI │ HUD │ BRI │ BRD │ EFF │
@@ -107,7 +107,7 @@ Hold ESC to access. Left: media controls (STOP/PLAY/PREV/NEXT), volume, brightne
                   │     │     │     │       │     │     │ ### │
                   └─────┴─────┴─────┘       └─────┴─────┴─────┘
 ```
-Hold ⌘SPC to access. F-keys mirror NUM layer positions. Right side: RGB controls (TOG/HUI/HUD/BRI/BRD/EFF) and Bluetooth profile selection (BT0-4, BTCLR).
+Hold ^SPC to access. F-keys mirror NUM layer positions. Right side: RGB controls (TOG/HUI/HUD/BRI/BRD/EFF) and Bluetooth profile selection (BT0-4, BTCLR).
 
 ## Flash
 
