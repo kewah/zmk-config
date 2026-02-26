@@ -376,13 +376,13 @@
             display-name = "SYM";
             // -----------------------------------------------------------------------------------------
             // |      |  `  |  ~  |  <  |  >  |  |  |       |       |  '  |  {  |  }  |  $  | =>  |      |
-            // |      |  !  |  *  |  -  |  _  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
+            // |      |  -  |  _  |  !  |  ?  |  &  |       |       |  #  |  (  |  )  |  :  |  ;  |      |
             // |      | CTL | ALT | GUI | SFT |     |       |       |     | SFT | GUI | ALT | CTL |      |
             // |      |  ^  |     |  +  |  =  |  %  |               |  @  |  [  |  ]  |     |     |      |
             //                    |     |     |     |               |     |     |     |
             bindings = <
                 &trans &kp GRAVE        &kp TILDE      &kp LT        &kp GT          &kp PIPE &trans &trans &kp SQT   &kp LBRC       &kp RBRC      &kp DLLR     &arrow_morph    &trans
-                &trans &hml LCTRL EXCL  &hml LALT QMARK &hml LGUI MINUS &hml LSHFT UNDER &kp AMPS &trans &trans &kp HASH  &hmr RSHFT LPAR &hmr LGUI RPAR &hmr RALT COLON &hmr RCTRL SEMI &trans
+                &trans &hml LCTRL MINUS &hml LALT UNDER &hml LGUI EXCL  &hml LSHFT QMARK &kp AMPS &trans &trans &kp HASH  &hmr RSHFT LPAR &hmr LGUI RPAR &hmr RALT COLON &hmr RCTRL SEMI &trans
                 &trans &kp CARET        &kp ASTRK      &kp PLUS      &kp EQUAL       &kp PRCNT              &kp AT    &kp LBKT       &kp RBKT      &trans       &trans          &trans
                                                        &trans        &trans          &trans                 &trans    &trans         &trans
             >;
