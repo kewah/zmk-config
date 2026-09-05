@@ -8,19 +8,19 @@ Inspired by [Seniply](https://stevep99.github.io/seniply/) and [Callum](https://
 
 - Base layer uses Graphite.
 - Only the inner 5 columns per half are used for alpha/layer keys. Extra keys are mapped as follows:
-  - Middle-row left outer carries `Esc/Shift` on `BASE`, `ESC` on `MOD`, and `` CMD+` `` on `EXT`.
-  - Middle-row right outer carries `mouseless` on `BASE`; top-row and bottom-row outer keys are unused.
+  - Middle-row left outer carries `ESC` on `BASE`/`MOD` and `` CMD+` `` on `EXT`.
+  - Bottom-row left outer carries dedicated `SHIFT` on `BASE`.
+  - Middle-row right outer carries `mouseless` on `BASE`; top-row outer keys and the bottom-row right outer key are unused.
   - The two top center keys are encoder presses; the remaining center keys are unused.
 - The layer diagrams omit unused extra keys unless one is used on that layer.
 - `Mod/Ext` is the main layer key:
   - tap = sticky `MOD`
   - hold = `EXT`
-- The remaining thumb keys are organized by role:
-  - tap the far-left `Esc/Shift` for Escape; hold it for Shift
+- The thumb keys are organized by role:
   - tap `Sym` or `Num` for one sticky layer key; hold for a sequence
   - `Backspace`, `Enter`, and `Space` are dedicated, normally repeatable keys
-  - hold `Esc/Shift` and tap `Backspace` for Delete
-  - hold `Esc/Shift` and tap `Enter` for Shift+Enter
+  - hold the dedicated `Shift` below `Escape` and tap `Backspace` for Delete
+  - hold `Shift` and tap `Enter` for Shift+Enter
   - tap or hold `Mod/Ext`, then tap `Enter` for an alternate resting-thumb Shift+Enter chord
 - `Backspace` and `Space` keep their base behavior on `MOD` and `EXT`.
 - `Delete` is available on the `EXT` comma position.
@@ -79,9 +79,10 @@ Thumbs
 
 Outer keys
 
-| Left outer | Right outer |
-| ---------- | ----------- |
-| `ESC/SHIFT` | `ML`       |
+| Row    | Left outer | Right outer |
+| ------ | ---------- | ----------- |
+| Home   | `ESC`      | `ML`        |
+| Bottom | `SHIFT`    |             |
 
 ## MOD (tap `Mod/Ext`)
 
@@ -277,8 +278,9 @@ Right half
 - `RGB SAI` / `RGB SAD` = increase/decrease saturation
 - `RGB BRI` / `RGB BRD` = increase/decrease brightness
 - `RGB EFF` = cycle RGB effect
-- Middle-row left outer key = `Esc/Shift` on `BASE`, `ESC` on `MOD`, and `` CMD+` `` on `EXT`
-- Middle-row right outer key = `ML` on `BASE`/`MOD`; top-row and bottom-row outer keys are unused
+- Middle-row left outer key = `ESC` on `BASE`/`MOD` and `` CMD+` `` on `EXT`
+- Bottom-row left outer key = dedicated `SHIFT` on `BASE`
+- Middle-row right outer key = `ML` on `BASE`/`MOD`; top-row outer keys and the bottom-row right outer key are unused
 
 ## Bluetooth Recovery
 

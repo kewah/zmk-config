@@ -5,7 +5,7 @@
 // - Hold EXT for navigation/editing, tap EXT for sticky MOD
 // - EXT left hand: one-handed mouse companion (swapper, history, clipboard),
 //   mirrored on MOD so tap-then-key one-shots the same shortcuts
-// - Far-left Shift: tap Escape, hold Shift
+// - Dedicated Escape on the far-left home row; Shift directly below it
 // - Dedicated Backspace, Enter, and Space; sticky-tap/held SYM and NUM
 // - Shift + Backspace sends Delete
 // - Delete stays on the EXT comma position
@@ -15,9 +15,10 @@
 // - BT controls on left, RGB controls on right of BT layer
 //
 // Extra Corne keys vs Totem:
-//   Middle-row left outer (pos 14) → Esc/Shift
+//   Middle-row left outer (pos 14) → Escape
+//   Bottom-row left outer (pos 28) → Shift
 //   Middle-row right outer (pos 27) → mouseless
-//   Top-row outers (pos 0, 13) and bottom-row outers (pos 28, 39) → &none
+//   Top-row outers (pos 0, 13) and bottom-row right outer (pos 39) → &none
 //   Center keys (pos 6, 7, 20, 21) → encoder press / &none
 
 #include <behaviors.dtsi>
@@ -117,15 +118,6 @@
             #binding-cells = <0>;
             bindings = <&kt LCTRL>, <&kp TAB>, <&kt LCTRL>;
             ignored-key-positions = <15>;
-        };
-
-        // Escape is a discrete tap; Shift resolves as soon as a chord starts.
-        esc_shift: escape_or_shift {
-            compatible = "zmk,behavior-hold-tap";
-            #binding-cells = <2>;
-            flavor = "hold-preferred";
-            tapping-term-ms = <150>;
-            bindings = <&kp>, <&kp>;
         };
 
         // SYM/NUM activate immediately, stay sticky when tapped, and behave
@@ -233,9 +225,9 @@
         //  ┌─extra─┐                                                          ┌─enc──┐ ┌─enc──┐                                                          ┌─extra─┐
             &none     &kp B        &kp L        &kp D        &kp W     &kp Z    &kp C_MUTE &kp C_PP &apo_dquote &kp F        &kp O        &kp U        &kp J     &none
         //  ┌outer-L┐                                                          ┌─ctr──┐ ┌─ctr──┐                                                          ┌outer-R┐
-            &esc_shift LSHFT ESC &kp N       &kp R        &kp T        &kp S     &kp G    &none  &none    &kp Y       &kp H        &kp A        &kp E        &kp I     &mouseless
+            &kp ESC    &kp N       &kp R        &kp T        &kp S     &kp G    &none  &none    &kp Y       &kp H        &kp A        &kp E        &kp I     &mouseless
         //  ┌─extra─┐                                                                                                                                      ┌─extra─┐
-            &none     &kp Q        &kp X        &kp M        &kp C     &kp V                    &kp K       &kp P        &comma_qmark &dot_excl    &slash_bslash &none
+            &kp LSHFT  &kp Q        &kp X        &kp M        &kp C     &kp V                    &kp K       &kp P        &comma_qmark &dot_excl    &slash_bslash &none
                                           &sticky_layer SYM      &ext_mod EXT MOD  &backspace_delete                    &kp RET  &kp SPACE  &sticky_layer NUM
             >;
             sensor-bindings = <&inc_dec_kp C_VOL_DN C_VOL_UP &inc_dec_kp PG_UP PG_DN &inc_dec_kp C_PREV C_NEXT &inc_dec_kp C_BRI_DN C_BRI_UP>;
