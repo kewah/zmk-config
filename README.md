@@ -10,7 +10,7 @@ Inspired by [Seniply](https://stevep99.github.io/seniply/) and [Callum](https://
 - Only the inner 5 columns per half are used for alpha/layer keys. Extra keys are mapped as follows:
   - Middle-row left outer carries `ESC` on `BASE`/`MOD` and `` CMD+` `` on `EXT`.
   - Bottom-row left outer carries dedicated `SHIFT` on `BASE`.
-  - Middle-row right outer carries `mouseless` on `BASE`; top-row outer keys and the bottom-row right outer key are unused.
+  - Top-row outer keys, the middle-row right outer key, and the bottom-row right outer key are unused.
   - The two top center keys are encoder presses; the remaining center keys are unused.
 - The layer diagrams omit unused extra keys unless one is used on that layer.
 - `Mod/Ext` is the main layer key:
@@ -81,7 +81,7 @@ Outer keys
 
 | Row    | Left outer | Right outer |
 | ------ | ---------- | ----------- |
-| Home   | `ESC`      | `ML`        |
+| Home   | `ESC`      |             |
 | Bottom | `SHIFT`    |             |
 
 ## MOD (tap `Mod/Ext`)
@@ -112,7 +112,7 @@ Outer keys
 
 | Left outer | Right outer |
 | ---------- | ----------- |
-| `ESC`      | `ML`        |
+| `ESC`      |             |
 
 ## EXT (hold `Mod/Ext`)
 
@@ -268,7 +268,6 @@ Right half
 - `HYP` = Hyper (`Ctrl+Alt+Cmd+Shift`)
 - `TMX` = tmux prefix (`Ctrl+Space`), available on both `MOD` and `EXT`
 - `RALT` = Right Alt (used for VoiceInk speech-to-text)
-- `ML` = Mouseless trigger (`Hyper+Enter`)
 - `BT 0`–`BT 4` = directly select Bluetooth profile slots 0–4
 - `BT CLR` = clear Bluetooth bonds
 - `BT NXT` / `BT PRV` = switch Bluetooth profile
@@ -280,7 +279,7 @@ Right half
 - `RGB EFF` = cycle RGB effect
 - Middle-row left outer key = `ESC` on `BASE`/`MOD` and `` CMD+` `` on `EXT`
 - Bottom-row left outer key = dedicated `SHIFT` on `BASE`
-- Middle-row right outer key = `ML` on `BASE`/`MOD`; top-row outer keys and the bottom-row right outer key are unused
+- Top-row outer keys, the middle-row right outer key, and the bottom-row right outer key are unused
 
 ## Bluetooth Recovery
 
