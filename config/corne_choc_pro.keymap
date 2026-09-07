@@ -7,7 +7,7 @@
 //   mirrored on MOD so tap-then-key one-shots the same shortcuts
 // - Dedicated Escape on the far-left home row; Shift directly below it
 // - Dedicated Backspace, Enter, and Space; sticky-tap/held SYM and NUM
-// - Shift + Backspace sends Delete
+// - Backspace stays on the inner-left thumb on SYM and NUM (Shift + Backspace sends Delete)
 // - Delete stays on the EXT comma position
 // - Symbols prioritized for markup and writing
 // - SYM + NUM opens the shared media/function layer
@@ -251,7 +251,7 @@
             &none  &none        &kp CARET    &kp AMPS     &kp PIPE     &none         &trans &trans &kp TILDE    &kp AT       &kp GRAVE    &kp HASH     &kp DLLR     &none
             &none  &sk LSHFT    &sk LALT     &sk LCTRL    &sk LGUI     &sk HYPER_MOD &trans &trans &kp MINUS    &kp LPAR     &kp LT       &kp LBKT     &kp COLON    &none
             &none  &none        &none        &none        &none        &none                      &kp UNDER    &kp RPAR     &kp GT       &kp RBKT     &kp SEMI     &none
-                                             &trans       &trans       &trans                      &trans       &trans       &trans
+                                             &trans       &trans       &backspace_delete           &trans       &trans       &trans
             >;
         };
 
@@ -260,8 +260,8 @@
             bindings = <
             &none  &kp FSLH     &kp N7       &kp N8       &kp N9       &kp PRCNT     &trans &trans &none        &none        &none        &none        &none        &none
             &none  &kp MINUS    &kp N1       &kp N2       &kp N3       &kp PLUS      &trans &trans &sk HYPER_MOD &sk LGUI    &sk LCTRL    &sk LALT     &sk LSHFT    &none
-            &none  &kp COLON    &kp N4       &kp N5       &kp N6       &kp ASTRK                  &none        &none        &none        &none        &none        &none
-                                             &kp DOT      &kp N0       &kp EQUAL                   &trans       &trans       &trans
+            &none  &kp COLON    &kp N4       &kp N5       &kp N6       &kp ASTRK                  &kp UNDER    &kp EQUAL    &kp COMMA    &none        &none        &none
+                                             &kp DOT      &kp N0       &backspace_delete            &trans       &trans       &trans
             >;
         };
 
@@ -270,7 +270,7 @@
             bindings = <
             &none  &none        &kp C_MUTE   &kp C_VOL_DN &kp C_VOL_UP &none         &trans &trans &kp F12      &kp F7       &kp F8       &kp F9       &none        &none
             &none  &kp C_STOP   &kp C_PP     &kp C_PREV   &kp C_NEXT   &none         &trans &trans &kp F10      &kp F1       &kp F2       &kp F3       &none        &none
-            &none  &none        &kp C_BRI_DN &kp C_BRI_UP &none        &kp F11                    &kp F4       &kp F5       &kp F6       &none        &none        &none
+            &none  &none        &kp C_BRI_DN &kp C_BRI_UP &none        &none                      &kp F11      &kp F4       &kp F5       &kp F6       &none        &none
                                              &trans       &trans       &trans                      &trans       &trans       &trans
             >;
         };

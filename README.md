@@ -22,7 +22,7 @@ Inspired by [Seniply](https://stevep99.github.io/seniply/) and [Callum](https://
   - hold the dedicated `Shift` below `Escape` and tap `Backspace` for Delete
   - hold `Shift` and tap `Enter` for Shift+Enter
   - tap or hold `Mod/Ext`, then tap `Enter` for an alternate resting-thumb Shift+Enter chord
-- `Backspace` and `Space` keep their base behavior on `MOD` and `EXT`.
+- `Backspace` and `Space` keep their base behavior on `MOD`, `EXT`, `SYM`, and `NUM`.
 - `Delete` is available on the `EXT` comma position.
 - `EXT` left half is a one-handed mouse companion: app switching, tab cycling, window cycling, back/forward, close, select all, undo/cut/copy/paste while the right hand stays on the mouse.
 - `MF` is a momentary thumb-chord layer:
@@ -198,13 +198,13 @@ Right half
 | ------ | ----- | ----- | ------ | ----- | ------- |
 | Top    |       |       |        |       |         |
 | Home   | `HYP*` | `CMD*` | `CTRL*` | `ALT*` | `SHIFT*` |
-| Bottom |       |       |        |       |         |
+| Bottom | `_`   | `=`   | `,`    |       |         |
 
 Thumbs
 
 | Left outer | Left middle | Left inner | Right inner | Right middle | Right outer |
 | ---------- | ----------- | ---------- | ----------- | ------------ | ----------- |
-| `.`        | `0`         | `=`        | `RET`       | `SPC`        | `NUM`       |
+| `.`        | `0`         | `BSP/DEL`  | `RET`       | `SPC`        | `NUM`       |
 
 ## MF (hold both outer layer thumbs: `Sym` + `Num`)
 
@@ -214,7 +214,7 @@ Left half
 | ------ | ------ | ------------ | ------ | ------ | ----- |
 | Top    |        | `MUTE`       | `VOL-` | `VOL+` |       |
 | Home   | `STOP` | `PLAY/PAUSE` | `PREV` | `NEXT` |       |
-| Bottom |        |              | `BRI-` | `BRI+` |       |
+| Bottom |        | `BRI-`       | `BRI+` |        |       |
 
 Right half
 
